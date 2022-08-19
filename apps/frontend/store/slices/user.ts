@@ -13,18 +13,18 @@ export const currentUserSlice = createSlice({
   initialState,
   reducers: {
     setCurrentUser: (state: CurrentUserState, action: unknown) => {
-      return  initialState;
+      return initialState;
     },
     clearCurrentUser() {
       return initialState;
-    }
-  }
+    },
+  },
 });
 
 export const isCurrentUserExist = createSelector(
   (state: CurrentUserState) => state.user,
-  (currentUser) => !!currentUser,
-)
+  (currentUser) => !!currentUser
+);
 
 export const favoriteItemsActions = currentUserSlice.actions;
 

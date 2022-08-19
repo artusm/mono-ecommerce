@@ -1,11 +1,11 @@
-import NextNProgress from "nextjs-progressbar";
+import NextNProgress from 'nextjs-progressbar';
 import { ReactNode } from 'react';
 
 import { GlobalSeo } from '@ecommerce/shared/graphql/types';
 import type { SimplifiedImage } from '@ecommerce/shared/graphql/refactored-types';
 
 import { Head } from './Head';
-import Header from "../Header";
+import Header from '../Header';
 
 interface Props {
   children: ReactNode;
@@ -23,7 +23,9 @@ export const Layout: React.FC<Props> = ({ children, defaultSeo, seo }) => {
       <NextNProgress />
       <Head defaultSeo={defaultSeo} seo={seo} />
       <Header />
-      <main className="mx-auto min-h-screen max-w-screen-xl px-4">{children}</main>
+      <main className="mx-auto min-h-screen max-w-screen-xl px-4">
+        {children}
+      </main>
     </>
   );
 };

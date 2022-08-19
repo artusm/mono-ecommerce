@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 import { NavButton } from '@ecommerce/shared/ui/NavButton';
 import { Logo } from '@ecommerce/shared/ui/Logo';
 
 import CartIcon from './Components/CardIcon';
 import FavoriteIcon from './Components/FavoriteIcon';
-import {NavSearch} from './Components/Search';
+import { NavSearch } from './Components/Search';
 
-import {UserIcon} from './Components/UserIcon';
-import clsx from "clsx";
+import { UserIcon } from './Components/UserIcon';
+import clsx from 'clsx';
 
 const index = () => {
   return (

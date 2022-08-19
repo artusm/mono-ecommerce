@@ -1,5 +1,5 @@
 import debounce from 'lodash.debounce';
-import {useEffect, useRef, useState} from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useSearchbarSearchLazyQuery } from '@ecommerce/shared/graphql/types';
 import { Searchbar } from '@ecommerce/shared/ui/searchbar';
@@ -19,8 +19,8 @@ export const NavSearch: React.FC = () => {
         if (!inputValue) return;
         search({
           variables: {
-            value: inputValue
-          }
+            value: inputValue,
+          },
         });
       }, 300);
       debounceRef.current();

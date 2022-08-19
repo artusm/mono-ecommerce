@@ -7,7 +7,7 @@ import clsx from 'clsx';
 export interface SearchbarItemProps {
   item: NonNullable<
     NonNullable<SearchbarSearchQuery['products']>['data'][0]['attributes']
-    >;
+  >;
   handleClick: () => void;
 }
 

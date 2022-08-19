@@ -4,7 +4,7 @@ import {
 } from '@ecommerce/shared/ui/CategoryCard';
 import clsx from 'clsx';
 import type { GetHomePageData } from '../Home';
-import React from "react";
+import React from 'react';
 
 interface Props {
   categories: GetHomePageData<'categories'>;

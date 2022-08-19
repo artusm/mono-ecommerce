@@ -21,11 +21,7 @@ export const Favorite: React.FC<Props> = (props) => {
         type: 'button',
       }}
     >
-      <Icon
-        icon="heart"
-        fill={isFavorite ? 'red' : 'none'}
-        size="sm"
-      />
+      <Icon icon="heart" fill={isFavorite ? 'red' : 'none'} size="sm" />
     </Button>
   );
 };

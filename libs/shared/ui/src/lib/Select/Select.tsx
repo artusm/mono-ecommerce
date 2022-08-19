@@ -80,7 +80,7 @@ export const Select: React.FC<SelectProps> = (props) => {
 
   const [selected, setSelected] = useState<SelectedState<
     typeof multiple
-    > | null>(createInitial(initial, items, multiple));
+  > | null>(createInitial(initial, items, multiple));
 
   const [open, setOpen] = useState(false);
 

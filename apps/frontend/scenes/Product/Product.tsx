@@ -3,19 +3,19 @@ import { ProductSidebar } from '@ecommerce/shared/ui/ProductSidebar';
 import { ProductInformation } from '@ecommerce/shared/ui/ProductInformation';
 import { ProductGallery } from '@ecommerce/shared/ui/ProductGallery';
 import clsx from 'clsx';
-import {useFavorite} from "../../hooks/useFavorite";
-import {useCartItem} from "../../hooks/useCartItem";
+import { useFavorite } from '../../hooks/useFavorite';
+import { useCartItem } from '../../hooks/useCartItem';
 
 interface Props {
   product: NonNullable<
     NonNullable<ProductSlugQuery['products']>['data'][0]['attributes']
-    >;
+  >;
 }
 
 export const Product: React.FC<Props> = (props) => {
   const { product = {} as Props['product'] } = props;
-  const {isFavorite, toggleFavorite} = useFavorite(product.slug);
-  const {inCartAmount, addCart} = useCartItem(product.slug);
+  const { isFavorite, toggleFavorite } = useFavorite(product.slug);
+  const { inCartAmount, addCart } = useCartItem(product.slug);
 
   return (
     <section

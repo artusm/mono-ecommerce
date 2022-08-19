@@ -6,14 +6,14 @@ type TypeProp<T extends keyof typeof ICONS> = keyof Pick<typeof ICONS, T>;
 
 export type NavButtonProps = (
   | {
-  type: TypeProp<'user'>;
-  loading: boolean;
-}
+      type: TypeProp<'user'>;
+      loading: boolean;
+    }
   | {
-  type: TypeProp<'cartBlack' | 'heart'>;
-  loading?: boolean;
-}
-  ) & { children?: ReactNode };
+      type: TypeProp<'cartBlack' | 'heart'>;
+      loading?: boolean;
+    }
+) & { children?: ReactNode };
 
 export function getHref(type: NavButtonProps['type']): string {
   switch (type) {

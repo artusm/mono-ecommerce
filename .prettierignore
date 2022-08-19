@@ -2,3 +2,14 @@
 
 /dist
 /coverage
+
+graphql.schema.json
+libs/shared/graphql/src/types.tsx
+node_modules
+apps/api/.cache
+apps/api/.tmp
+apps/api/dist
+apps/api/node_modules
+apps/api/.strapi-updater.json
+apps/api/build/
+apps/frontend/.next

@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import type { Item, ItemMap } from '../select';
-import {Icon} from "@ecommerce/shared/ui/Icon";
+import { Icon } from '@ecommerce/shared/ui/Icon';
 
 interface Props {
   selected: Item | ItemMap | null;

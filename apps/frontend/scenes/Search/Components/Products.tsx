@@ -1,7 +1,7 @@
 import { ItemCardLogic } from '../../../components/ItemCardLogic';
 import { ProductSearchQuery } from '@ecommerce/shared/graphql/types';
 import clsx from 'clsx';
-import React from "react";
+import React from 'react';
 
 interface Props {
   products: NonNullable<ProductSearchQuery['products']>['data'];

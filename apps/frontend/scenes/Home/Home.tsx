@@ -1,12 +1,14 @@
 import { HomePageQuery } from '@ecommerce/shared/graphql/types';
-import {CategoriesSection} from "./Components/CategoriesSection";
-import {ProductsSection} from "./Components/ProductsSection";
+import { CategoriesSection } from './Components/CategoriesSection';
+import { ProductsSection } from './Components/ProductsSection';
 
 type HomePageAttributes = NonNullable<
   NonNullable<NonNullable<HomePageQuery['homePage']>['data']>['attributes']
-  >;
+>;
 
-export type GetHomePageData<T extends keyof HomePageAttributes> = NonNullable<HomePageAttributes[T]>;
+export type GetHomePageData<T extends keyof HomePageAttributes> = NonNullable<
+  HomePageAttributes[T]
+>;
 
 interface Props {
   categories: GetHomePageData<'categories'>;
