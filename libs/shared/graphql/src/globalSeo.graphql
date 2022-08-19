@@ -1,0 +1,22 @@
+query GlobalSeo {
+  globalSeo {
+    data {
+      attributes {
+        metaTitle
+        metaImage {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+        metaDescription
+        meta {
+          id
+          name
+          content
+        }
+      }
+    }
+  }
+}

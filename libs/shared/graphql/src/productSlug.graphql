@@ -1,0 +1,34 @@
+query ProductSlug($slug: String) {
+  products(filters: { slug: { eq: $slug } }, pagination: { limit: 1 }) {
+    data {
+      id
+      attributes {
+        slug
+        smallDescription
+        name
+        information {
+          title
+          content
+        }
+        description
+        price
+        category {
+          data {
+            id
+            attributes {
+              slug
+              name
+            }
+          }
+        }
+        images {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+}

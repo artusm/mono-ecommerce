@@ -1,0 +1,19 @@
+query SearchbarSearch($value: String) {
+  products(filters: { name: { containsi: $value } }, pagination: { limit: 5 }) {
+    data {
+      id
+      attributes {
+        slug
+        smallDescription
+        name
+        images {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+}

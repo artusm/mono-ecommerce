@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_product_information_sections",
+  "info": {
+    "displayName": "information-section",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

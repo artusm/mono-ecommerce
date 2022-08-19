@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_order_items",
+  "info": {
+    "displayName": "item",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "amount": {
+      "type": "integer",
+      "required": true,
+      "default": 1,
+      "min": 1,
+      "max": 16
+    }
+  }
+}

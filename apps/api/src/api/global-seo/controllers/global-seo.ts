@@ -1,0 +1,7 @@
+/**
+ *  global-seo controller
+ */
+
+import { factories } from '@strapi/strapi';
+
+export default factories.createCoreController('api::global-seo.global-seo');

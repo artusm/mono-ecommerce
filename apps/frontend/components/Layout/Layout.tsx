@@ -1,0 +1,29 @@
+import NextNProgress from "nextjs-progressbar";
+import { ReactNode } from 'react';
+
+import { GlobalSeo } from '@ecommerce/shared/graphql/types';
+import type { SimplifiedImage } from '@ecommerce/shared/graphql/refactored-types';
+
+import { Head } from './Head';
+import Header from "../Header";
+
+interface Props {
+  children: ReactNode;
+  defaultSeo: Omit<GlobalSeo, 'metaImage'> & { metaImage: SimplifiedImage };
+  seo?: {
+    title?: string;
+    description?: string;
+    image?: string;
+  };
+}
+
+export const Layout: React.FC<Props> = ({ children, defaultSeo, seo }) => {
+  return (
+    <>
+      <NextNProgress />
+      <Head defaultSeo={defaultSeo} seo={seo} />
+      <Header />
+      <main className="mx-auto min-h-screen max-w-screen-xl px-4">{children}</main>
+    </>
+  );
+};

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fast_users",
+  "info": {
+    "singularName": "fast-user",
+    "pluralName": "fast-users",
+    "displayName": "FastUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "token": {
+      "type": "uid",
+      "required": true,
+      "minLength": 40
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "user"
+    }
+  }
+}
