@@ -1,18 +1,17 @@
-import Head from 'next/head';
 import { AppProps } from 'next/app';
-import { wrapper } from "../store";
+import { wrapper } from '../store';
 import 'windi.css';
 import '../styles/global.css';
+import {ErrorBoundary} from '../components/ErrorBoundary';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Head>
-        <title>Welcome to frontend!</title>
-      </Head>
-      <main className="app">
-        <Component {...pageProps} />
-      </main>
+      <ErrorBoundary>
+        <main className="app">
+          <Component {...pageProps} />
+        </main>
+      </ErrorBoundary>
     </>
   );
 }
