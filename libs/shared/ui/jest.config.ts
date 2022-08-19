@@ -9,7 +9,9 @@ export default {
   },
   transform: {
     '^.+\\.[tj]s$': 'ts-jest',
+    '^.+\\.[tj]sx?$': 'ts-jest',
+    '^.+\\.(svg|png|jpg|jpeg|gif|webp)$': '<rootDir>/empty.js',
   },
-  moduleFileExtensions: ['ts', 'js', 'html'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'html'],
   coverageDirectory: '../../../coverage/libs/shared/ui',
 };
