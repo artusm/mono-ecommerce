@@ -7,7 +7,7 @@ import { Favorite } from './Components/Favorite';
 export interface ProductSidebarProps {
   product: NonNullable<
     NonNullable<ProductSlugQuery['products']>['data'][0]['attributes']
-    >;
+  >;
   handleCartClick: () => void;
   handleRemoveCartClick: () => void;
   handleFavoriteClick: () => void;
@@ -22,7 +22,7 @@ export const ProductSidebar: React.FC<ProductSidebarProps> = (props) => {
     handleFavoriteClick,
     handleRemoveCartClick,
     inCartAmount,
-    isFavorite
+    isFavorite,
   } = props;
 
   const { name, price, smallDescription } = product;

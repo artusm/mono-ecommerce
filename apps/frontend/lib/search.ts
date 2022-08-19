@@ -23,7 +23,7 @@ export function searchSafeQuery(query: ParsedUrlQuery): SafeQuery {
 const searchFilterHandler: Record<
   string,
   (value: string | string[]) => unknown
-  > = {
+> = {
   s: (value): ProductSearchQueryVariables['s'] => {
     switch (value) {
       case SORT_FILTER.PRICE_LOW_HIGH:

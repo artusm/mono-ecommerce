@@ -18,7 +18,8 @@ export interface SearchbarProps {
 }
 
 export const Searchbar: React.FC<SearchbarProps> = (props: SearchbarProps) => {
-  const { handleClear, handleSubmit, handleInput, input, items, loading } = props;
+  const { handleClear, handleSubmit, handleInput, input, items, loading } =
+    props;
 
   const [focus, setFocus] = useState(false);
 

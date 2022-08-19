@@ -1,6 +1,6 @@
 import NextHead from 'next/head';
 import { GlobalSeo } from '@ecommerce/shared/graphql/types';
-import { getImageURL} from '@ecommerce/shared/utils/url';
+import { getImageURL } from '@ecommerce/shared/utils/url';
 import type { SimplifiedImage } from '@ecommerce/shared/graphql/refactored-types';
 
 interface Props {

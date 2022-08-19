@@ -11,7 +11,7 @@ import { Name } from './Components/Name';
 export interface CartItemProps {
   item: NonNullable<
     NonNullable<ProductCartQuery['products']>['data'][number]['attributes']
-    >;
+  >;
   isFavorite?: boolean;
   inCartAmount?: number;
   handleCartMinusClick: () => void;

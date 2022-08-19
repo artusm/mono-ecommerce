@@ -1,7 +1,7 @@
 import { CartItemLogic } from '../../../components/CartItemLogic';
 import { ProductCartQuery } from '@ecommerce/shared/graphql/types';
 import clsx from 'clsx';
-import React from "react";
+import React from 'react';
 
 interface Props {
   products: NonNullable<ProductCartQuery['products']>['data'];
@@ -16,9 +16,7 @@ export const List: React.FC<Props> = (props) => {
         (product) =>
           product.attributes && (
             <li key={product.id}>
-              <CartItemLogic
-                item={product.attributes}
-              />
+              <CartItemLogic item={product.attributes} />
             </li>
           )
       )}

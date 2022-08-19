@@ -38,7 +38,11 @@ export const Icon: React.FC<IconProps> = (props: IconProps) => {
       )}
       aria-hidden="true"
     >
-      {loading ? <Spinner /> : <FeatherIcon icon={ICONS[icon] || icon} {...other} />}
+      {loading ? (
+        <Spinner />
+      ) : (
+        <FeatherIcon icon={ICONS[icon] || icon} {...other} />
+      )}
     </div>
   );
 };

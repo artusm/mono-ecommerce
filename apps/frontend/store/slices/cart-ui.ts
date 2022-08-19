@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export interface CardUIState {
-  cartBoxIsVisible: boolean
+  cartBoxIsVisible: boolean;
 }
 
 const initialState: CardUIState = {
@@ -15,7 +15,7 @@ export const cardUISlice = createSlice({
     toggleCartBox(state, action: PayloadAction<boolean>) {
       state.cartBoxIsVisible = action.payload;
     },
-  }
+  },
 });
 
 export const cardUIActions = cardUISlice.actions;

@@ -15,9 +15,7 @@ export const Logo: React.FC<LogoProps> = () => {
   const firstWordChars = useRef<HTMLSpanElement[]>([]);
   const secondWordChars = useRef<HTMLSpanElement[]>([]);
 
-  useIsomorphicLayoutEffect(() => {
-
-  }, []);
+  useIsomorphicLayoutEffect(() => {}, []);
 
   return (
     <Link href="/">

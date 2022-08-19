@@ -7,8 +7,8 @@ export interface ProductGalleryProps {
   images: NonNullable<
     NonNullable<
       NonNullable<ProductSlugQuery['products']>['data'][0]['attributes']
-      >['images']
-    >['data'];
+    >['images']
+  >['data'];
 }
 
 export const ProductGallery: React.FC<ProductGalleryProps> = (props) => {

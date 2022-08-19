@@ -1,12 +1,12 @@
-import React  from "react";
-import clsx from "clsx";
-import { NavButton } from "@ecommerce/shared/ui/NavButton";
+import React from 'react';
+import clsx from 'clsx';
+import { NavButton } from '@ecommerce/shared/ui/NavButton';
 
 interface Props {
   cartItemsQuantity: number;
 }
 
-const Icon: React.FC<Props> = ({cartItemsQuantity}) => {
+const Icon: React.FC<Props> = ({ cartItemsQuantity }) => {
   return (
     <NavButton type="cartBlack">
       {cartItemsQuantity > 0 && (

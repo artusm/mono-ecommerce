@@ -21,8 +21,8 @@ export const useClickOutside = <T extends HTMLElement = HTMLElement>(
     on(document, 'mousedown', listener);
 
     return () => {
-        off(document, 'mousedown', listener);
-        off(document, 'touchstart', listener);
+      off(document, 'mousedown', listener);
+      off(document, 'touchstart', listener);
     };
   }, [ref, handler]);
 };

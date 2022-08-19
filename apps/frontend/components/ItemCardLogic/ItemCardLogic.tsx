@@ -1,6 +1,6 @@
 import { ItemCard, ItemCardProps } from '@ecommerce/shared/ui/ItemCard';
-import {useFavorite} from "../../hooks/useFavorite";
-import {useCartItem} from "../../hooks/useCartItem";
+import { useFavorite } from '../../hooks/useFavorite';
+import { useCartItem } from '../../hooks/useCartItem';
 
 type Props = Omit<
   ItemCardProps,
@@ -9,11 +9,11 @@ type Props = Omit<
   | 'isFavorite'
   | 'inCartAmount'
   | 'handleAmountCartClick'
-  >;
+>;
 
 export const ItemCardLogic: React.FC<Props> = ({ item }) => {
-  const {isFavorite, toggleFavorite} = useFavorite(item.slug);
-  const {addCart, inCartAmount} = useCartItem(item.slug);
+  const { isFavorite, toggleFavorite } = useFavorite(item.slug);
+  const { addCart, inCartAmount } = useCartItem(item.slug);
 
   return (
     <ItemCard

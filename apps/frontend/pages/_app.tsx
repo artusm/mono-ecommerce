@@ -2,7 +2,7 @@ import { AppProps } from 'next/app';
 import { wrapper } from '../store';
 import 'windi.css';
 import '../styles/global.css';
-import {ErrorBoundary} from '../components/ErrorBoundary';
+import { ErrorBoundary } from '../components/ErrorBoundary';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (

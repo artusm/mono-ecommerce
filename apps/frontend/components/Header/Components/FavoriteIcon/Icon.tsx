@@ -1,12 +1,12 @@
-import React  from "react";
-import clsx from "clsx";
-import { NavButton } from "@ecommerce/shared/ui/NavButton";
+import React from 'react';
+import clsx from 'clsx';
+import { NavButton } from '@ecommerce/shared/ui/NavButton';
 
 interface Props {
   favoriteItemsQuantity: number;
 }
 
-const Icon: React.FC<Props> = ({favoriteItemsQuantity}) => {
+const Icon: React.FC<Props> = ({ favoriteItemsQuantity }) => {
   return (
     <NavButton type="heart">
       {favoriteItemsQuantity > 0 && (
