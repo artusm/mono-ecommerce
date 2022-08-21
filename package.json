@@ -22,7 +22,7 @@
     "@graphql-codegen/typescript-operations": "^2.5.3",
     "@graphql-codegen/typescript-react-apollo": "^3.3.3",
     "@nrwl/next": "14.5.6",
-    "@reduxjs/toolkit": "^1.8.4",
+    "@reduxjs/toolkit": "^1.8.5",
     "clsx": "^1.2.1",
     "core-js": "^3.6.5",
     "feather-icons-react": "^0.5.0",
