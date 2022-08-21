@@ -1,12 +1,12 @@
 {
-  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
-  "version": 2,
-  "projects": {
-    "api": "apps/api",
-    "frontend": "apps/frontend",
-    "frontend-e2e": "apps/frontend-e2e",
-    "shared-graphql": "libs/shared/graphql",
-    "shared-ui": "libs/shared/ui",
-    "shared-utils": "libs/shared/utils"
-  }
+    "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+    "version": 2,
+    "projects": {
+        "api": "apps/api",
+        "frontend": "apps/frontend",
+        "frontend-e2e": "apps/frontend-e2e",
+        "shared-graphql": "libs/shared/graphql",
+        "shared-ui": "libs/shared/ui",
+        "shared-utils": "libs/shared/utils"
+    }
 }

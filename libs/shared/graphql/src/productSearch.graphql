@@ -1,34 +1,34 @@
 query ProductSearch(
-  $i: String
-  $c: [String]
-  $s: [String]
-  $p: FloatFilterInput
+    $i: String
+    $c: [String]
+    $s: [String]
+    $p: FloatFilterInput
 ) {
-  products(
-    filters: {
-      name: { containsi: $i }
-      category: { slug: { in: $c } }
-      price: $p
-    }
-    pagination: { limit: 50 }
-    sort: $s
-  ) {
-    data {
-      id
-      attributes {
-        price
-        description
-        slug
-        smallDescription
-        name
-        images {
-          data {
-            attributes {
-              url
-            }
-          }
+    products(
+        filters: {
+            name: { containsi: $i }
+            category: { slug: { in: $c } }
+            price: $p
         }
-      }
+        pagination: { limit: 50 }
+        sort: $s
+    ) {
+        data {
+            id
+            attributes {
+                price
+                description
+                slug
+                smallDescription
+                name
+                images {
+                    data {
+                        attributes {
+                            url
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
 }

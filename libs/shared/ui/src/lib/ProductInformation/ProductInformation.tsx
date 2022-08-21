@@ -1,21 +1,26 @@
+import React from 'react';
+
 import type { ComponentProductInformationSection } from '@ecommerce/shared/graphql/types';
+
 import { Item } from './LocalComponents/Item';
 
 export interface ProductInformationProps {
-  information: (Omit<ComponentProductInformationSection, 'id'> | null)[];
+    information: (Omit<ComponentProductInformationSection, 'id'> | null)[];
 }
 
 export const ProductInformation: React.FC<ProductInformationProps> = (
-  props
+    props,
 ) => {
-  const { information } = props;
+    const { information } = props;
 
-  return (
-    <ul>
-      {information.map(
-        (information) =>
-          information && <Item key={information.title} data={information} />
-      )}
-    </ul>
-  );
+    return (
+        <ul>
+            {information.map(
+                (information) =>
+                    information && (
+                        <Item key={information.title} data={information} />
+                    ),
+            )}
+        </ul>
+    );
 };

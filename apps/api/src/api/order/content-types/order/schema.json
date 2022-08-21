@@ -1,35 +1,35 @@
 {
-  "kind": "collectionType",
-  "collectionName": "orders",
-  "info": {
-    "singularName": "order",
-    "pluralName": "orders",
-    "displayName": "Order",
-    "description": ""
-  },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
-  "attributes": {
-    "item": {
-      "displayName": "item",
-      "type": "component",
-      "repeatable": true,
-      "component": "order.item",
-      "required": true
+    "kind": "collectionType",
+    "collectionName": "orders",
+    "info": {
+        "singularName": "order",
+        "pluralName": "orders",
+        "displayName": "Order",
+        "description": ""
     },
-    "amount": {
-      "type": "decimal",
-      "required": true,
-      "min": 0.01,
-      "default": 0.01
+    "options": {
+        "draftAndPublish": false
     },
-    "user": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::fast-user.fast-user",
-      "inversedBy": "orders"
+    "pluginOptions": {},
+    "attributes": {
+        "item": {
+            "displayName": "item",
+            "type": "component",
+            "repeatable": true,
+            "component": "order.item",
+            "required": true
+        },
+        "amount": {
+            "type": "decimal",
+            "required": true,
+            "min": 0.01,
+            "default": 0.01
+        },
+        "user": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::fast-user.fast-user",
+            "inversedBy": "orders"
+        }
     }
-  }
 }

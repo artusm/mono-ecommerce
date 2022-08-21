@@ -1,22 +1,22 @@
 query GlobalSeo {
-  globalSeo {
-    data {
-      attributes {
-        metaTitle
-        metaImage {
-          data {
+    globalSeo {
+        data {
             attributes {
-              url
+                metaTitle
+                metaImage {
+                    data {
+                        attributes {
+                            url
+                        }
+                    }
+                }
+                metaDescription
+                meta {
+                    id
+                    name
+                    content
+                }
             }
-          }
         }
-        metaDescription
-        meta {
-          id
-          name
-          content
-        }
-      }
     }
-  }
 }

@@ -2,13 +2,13 @@ overwrite: true
 schema: 'http://localhost:1337/graphql'
 documents: 'libs/shared/graphql/src/**/*.graphql'
 generates:
-  ./libs/shared/graphql/src/types.tsx:
-    plugins:
-      - 'typescript'
-      - 'typescript-operations'
-      - 'typescript-react-apollo'
-    config:
-      withHooks: true
-  ./graphql.schema.json:
-    plugins:
-      - 'introspection'
+    ./libs/shared/graphql/src/types.tsx:
+        plugins:
+            - 'typescript'
+            - 'typescript-operations'
+            - 'typescript-react-apollo'
+        config:
+            withHooks: true
+    ./graphql.schema.json:
+        plugins:
+            - 'introspection'

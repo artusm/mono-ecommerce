@@ -1,66 +1,69 @@
-import React from 'react';
+import '@testing-library/jest-dom';
 import {
-  fireEvent,
-  render,
-  RenderResult,
-  screen,
-  waitFor,
+    RenderResult,
+    fireEvent,
+    render,
+    screen,
+    waitFor,
 } from '@testing-library/react';
 import { create } from 'react-test-renderer';
-import '@testing-library/jest-dom';
 
-import { ProductInformation } from './ProductInformation';
+import React from 'react';
+
 import { PRODUCT_INFORMATION_DEFAULT_PROPS } from '../../props/constants';
+import { ProductInformation } from './ProductInformation';
 
 jest.mock('react-markdown', () => (props: { children: React.ReactNode }) => {
-  const ComponentToMock: React.FC<{ children: React.ReactNode }> = (props) => (
-    // eslint-disable-next-line react/jsx-no-useless-fragment
-    <>{props.children}</>
-  );
+    const ComponentToMock: React.FC<{ children: React.ReactNode }> = (
+        props,
+    ) => (
+        // eslint-disable-next-line react/jsx-no-useless-fragment
+        <>{props.children}</>
+    );
 
-  return <ComponentToMock>{props.children}</ComponentToMock>;
+    return <ComponentToMock>{props.children}</ComponentToMock>;
 });
 
 describe('ProductInformation', () => {
-  let renderResult: RenderResult;
+    let renderResult: RenderResult;
 
-  beforeEach(() => {
-    renderResult = render(
-      <ProductInformation {...PRODUCT_INFORMATION_DEFAULT_PROPS} />
-    );
-  });
+    beforeEach(() => {
+        renderResult = render(
+            <ProductInformation {...PRODUCT_INFORMATION_DEFAULT_PROPS} />,
+        );
+    });
 
-  it('should render successfully', () => {
-    const { baseElement } = renderResult;
+    it('should render successfully', () => {
+        const { baseElement } = renderResult;
 
-    const tree = create(
-      <ProductInformation {...PRODUCT_INFORMATION_DEFAULT_PROPS} />
-    ).toJSON();
-    expect(tree).toMatchSnapshot();
+        const tree = create(
+            <ProductInformation {...PRODUCT_INFORMATION_DEFAULT_PROPS} />,
+        ).toJSON();
+        expect(tree).toMatchSnapshot();
 
-    expect(baseElement).toBeTruthy();
-  });
+        expect(baseElement).toBeTruthy();
+    });
 
-  it('should have proper amount of items', () => {
-    const listItems = screen.getAllByRole('listitem');
+    it('should have proper amount of items', () => {
+        const listItems = screen.getAllByRole('listitem');
 
-    expect(listItems.length).toBe(
-      PRODUCT_INFORMATION_DEFAULT_PROPS.information.length
-    );
-  });
+        expect(listItems.length).toBe(
+            PRODUCT_INFORMATION_DEFAULT_PROPS.information.length,
+        );
+    });
 
-  it('show content on click', async () => {
-    const { content, title } =
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      PRODUCT_INFORMATION_DEFAULT_PROPS.information[1]!;
+    it('show content on click', async () => {
+        const { content, title } =
+            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+            PRODUCT_INFORMATION_DEFAULT_PROPS.information[1]!;
 
-    const specificItemButton = screen.getByRole('button', { name: title });
+        const specificItemButton = screen.getByRole('button', { name: title });
 
-    expect(screen.queryByText(content)).not.toBeInTheDocument();
-    fireEvent.click(specificItemButton);
+        expect(screen.queryByText(content)).not.toBeInTheDocument();
+        fireEvent.click(specificItemButton);
 
-    await waitFor(() =>
-      expect(screen.queryByText(content)).toBeInTheDocument()
-    );
-  });
+        await waitFor(() =>
+            expect(screen.queryByText(content)).toBeInTheDocument(),
+        );
+    });
 });

@@ -1,21 +1,21 @@
 query FavoriteProducts($value: [String]) {
-  products(filters: { slug: { in: $value } }, pagination: { limit: 50 }) {
-    data {
-      id
-      attributes {
-        price
-        description
-        slug
-        smallDescription
-        name
-        images {
-          data {
+    products(filters: { slug: { in: $value } }, pagination: { limit: 50 }) {
+        data {
+            id
             attributes {
-              url
+                price
+                description
+                slug
+                smallDescription
+                name
+                images {
+                    data {
+                        attributes {
+                            url
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
 }
