@@ -2,12 +2,9 @@ import { ButtonProps } from '../lib/Button';
 import {CartItemProps} from "@ecommerce/shared/ui/CartItem";
 import {ProductSidebarProps} from "@ecommerce/shared/ui/ProductSidebar";
 import {CartSidebarProps} from "@ecommerce/shared/ui/CartSidebar";
+import {CategoryCardProps} from "@ecommerce/shared/ui/CategoryCard";
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 import cat from './cat.jpg';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 import cat2 from './cat2.jpeg';
 
 export const PRODUCT: ProductSidebarProps['product'] = {
@@ -70,4 +67,19 @@ export const CART_SIDEBAR_DEFAULT_PROPS: CartSidebarProps = {
     console.log('checkout');
   },
   isLoading: false,
+};
+
+export const CATEGORY_CARD_DEFAULT_PROPS: CategoryCardProps = {
+  category: {
+    smallDescription:
+      'smalll des',
+    image: {
+      data: {
+        attributes: {
+          url: cat,
+        },
+      },
+    },
+    slug: '1',
+  },
 };

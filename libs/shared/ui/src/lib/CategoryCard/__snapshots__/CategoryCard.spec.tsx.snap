@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryCard should render successfully 1`] = `
+<a
+  className="h-full flex flex-col hover:(underline) focus:(underline)"
+  href="/s?c=1"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+>
+  <div
+    className="w-full relative bg-gray-100 category-card-aspect"
+  >
+    Next image stub
+  </div>
+  <div
+    className="p-5 flex flex-col flex-1 gap-4 bg-blue-400 sm:(p-8 gap-8)"
+  >
+    <h3
+      className="font-bold text-xl leading-relaxed sm:(text-2xl)"
+    >
+      smalll des
+    </h3>
+    <button
+      className="inline-block cursor-pointer transform-gpu transition-all active:scale-92 rounded-full p-3 bg-black text-white hover:(bg-dark-400) w-max mt-auto"
+      title="go to undefined category"
+    >
+      <div
+        aria-hidden="true"
+        className="h-6 w-6 relative sm:(h-8 w-8)"
+      >
+        <svg
+          className="feather feather-arrow-right "
+          fill="none"
+          height={32}
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+          width={32}
+        >
+          <g
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<line x1=\\"5\\" y1=\\"12\\" x2=\\"19\\" y2=\\"12\\"></line><polyline points=\\"12 5 19 12 12 19\\"></polyline>",
+              }
+            }
+          />
+        </svg>
+      </div>
+    </button>
+  </div>
+</a>
+`;
