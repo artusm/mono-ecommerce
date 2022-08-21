@@ -10,8 +10,7 @@ import {ProductGalleryProps} from "@ecommerce/shared/ui/ProductGallery";
 
 import cat from './cat.jpg';
 import cat2 from './cat2.jpeg';
-
-console.log(cat2)
+import {ProductInformationProps} from "@ecommerce/shared/ui/ProductInformation";
 
 export const PRODUCT: ProductSidebarProps['product'] = {
   slug: 'some-name',
@@ -138,4 +137,11 @@ export const PRODUCT_GALLERY_DEFAULT_PROPS: ProductGalleryProps = {
       },
     },
   ],
+};
+
+export const PRODUCT_INFORMATION_DEFAULT_PROPS: ProductInformationProps = {
+  information: [...Array(10).keys()].map((_value, index) => ({
+    title: `Title${index + 1}`,
+    content: `content${index + 1}`,
+  })),
 };
