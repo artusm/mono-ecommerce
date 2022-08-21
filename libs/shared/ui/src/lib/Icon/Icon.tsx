@@ -1,7 +1,7 @@
 import FeatherIcon from 'feather-icons-react';
 import clsx from 'clsx';
 import { Spinner } from './Components/Spinner';
-import {SVGAttributes} from "react";
+import { SVGAttributes } from 'react';
 
 export interface IconProps extends SVGAttributes<SVGElement> {
   icon?: keyof typeof ICONS;

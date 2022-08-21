@@ -1,5 +1,5 @@
 import { render, RenderResult, screen } from '@testing-library/react';
-import {create} from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 import '@testing-library/jest-dom';
 
 import { Logo } from './Logo';

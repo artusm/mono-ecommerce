@@ -1,7 +1,7 @@
 import { ITEM, SEARCHBAR_ITEM_DEFAULT_PROPS } from '../../props/constants';
 import { render, screen } from '@testing-library/react';
 import { SearchbarItem } from './SearchbarItem';
-import {create} from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 
 describe('SearchbarItem', () => {
   let element: HTMLElement;
@@ -15,8 +15,9 @@ describe('SearchbarItem', () => {
   });
 
   it('should render successfully', () => {
-    const tree = create(<SearchbarItem {...SEARCHBAR_ITEM_DEFAULT_PROPS} />)
-      .toJSON();
+    const tree = create(
+      <SearchbarItem {...SEARCHBAR_ITEM_DEFAULT_PROPS} />
+    ).toJSON();
     expect(tree).toMatchSnapshot();
 
     expect(element).toBeTruthy();
