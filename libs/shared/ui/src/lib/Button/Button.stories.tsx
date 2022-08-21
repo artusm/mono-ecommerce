@@ -1,4 +1,4 @@
-import { BUTTON_DEFAULT_PROPS } from '../../props/constants';
+import { BUTTON_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
 import { Story, Meta } from '@storybook/react';
 import { Button, ButtonProps } from './Button';
 

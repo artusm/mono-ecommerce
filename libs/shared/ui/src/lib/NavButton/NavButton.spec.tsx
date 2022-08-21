@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import { RenderResult, render, screen } from '@testing-library/react';
 import { create } from 'react-test-renderer';
 
-import { NAV_BUTTON_DEFAULT_PROPS } from '../../props/constants';
+import { NAV_BUTTON_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
 import { NavButton, getHref } from './NavButton';
 
 describe('NavButton', () => {

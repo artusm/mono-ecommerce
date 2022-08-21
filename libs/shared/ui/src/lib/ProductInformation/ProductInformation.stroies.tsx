@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import { PRODUCT_INFORMATION_DEFAULT_PROPS } from '../../props/constants';
+import { PRODUCT_INFORMATION_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
 import {
   ProductInformation,
   ProductInformationProps,

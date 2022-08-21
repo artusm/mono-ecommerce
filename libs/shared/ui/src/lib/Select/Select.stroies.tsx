@@ -1,4 +1,4 @@
-import { SELECT_DEFAULT_PROPS } from '../../props/constants';
+import { SELECT_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
 import { Story, Meta } from '@storybook/react';
 import { Select, SelectProps } from './Select';
 

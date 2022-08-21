@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import { RenderResult, render, screen } from '@testing-library/react';
 import { create } from 'react-test-renderer';
 
-import { ICON_DEFAULT_PROPS } from '../../props/constants';
+import { ICON_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
 import { Icon } from './Icon';
 
 describe('Icon', () => {

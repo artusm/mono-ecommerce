@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import { PRODUCT_GALLERY_DEFAULT_PROPS } from '../../props/constants';
+import { PRODUCT_GALLERY_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
 import { ProductGallery, ProductGalleryProps } from './ProductGallery';
 
 export default {

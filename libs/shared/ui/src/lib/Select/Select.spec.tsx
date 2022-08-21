@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import { RenderResult, render } from '@testing-library/react';
 import { create } from 'react-test-renderer';
 
-import { SELECT_DEFAULT_PROPS } from '../../props/constants';
+import { SELECT_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
 import { Select, createInitial } from './Select';
 
 describe('Select', () => {

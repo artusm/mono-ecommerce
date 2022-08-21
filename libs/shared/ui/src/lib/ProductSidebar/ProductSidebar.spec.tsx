@@ -4,7 +4,7 @@ import { create } from 'react-test-renderer';
 
 import { formatPrice } from '@ecommerce/shared/utils/format-price';
 
-import { PRODUCT_SIDEBAR_DEFAULT_PROPS } from '../../props/constants';
+import { PRODUCT_SIDEBAR_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
 import { ProductSidebar } from './ProductSidebar';
 
 describe('ProductSidebar', () => {
