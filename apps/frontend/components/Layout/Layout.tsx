@@ -1,5 +1,5 @@
 import NextNProgress from 'nextjs-progressbar';
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 
 import { GlobalSeo } from '@ecommerce/shared/graphql/types';
 import type { SimplifiedImage } from '@ecommerce/shared/graphql/refactored-types';

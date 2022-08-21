@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { AppState } from '../store';
+import { AppState } from '@/store';
 import {
   isFavoriteSelector,
   toggleFavorite,
-} from '../store/slices/favorite-items';
+} from '@/store/slices/favorite-items';
 import { useCallback } from 'react';
 
 export const useFavorite = (slug: string) => {

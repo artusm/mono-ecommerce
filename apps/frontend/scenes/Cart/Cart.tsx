@@ -3,9 +3,7 @@ import React, { useMemo, useState } from 'react';
 import { CartSidebar } from '@ecommerce/shared/ui/CartSidebar';
 import { List } from './LocalComponents/List';
 import clsx from 'clsx';
-import { useSelector } from 'react-redux';
-import { AppState } from '../../store';
-import { CardItemsState } from '../../store/slices/cart-items';
+import { CardItemsState } from '@/store/slices/cart-items';
 
 interface Props {
   products?: ProductCartQuery;

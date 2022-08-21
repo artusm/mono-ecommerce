@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { AppState } from '../store';
+import { AppState } from '@/store';
 import {
   addCart,
   AddCartPayload,
   getInCartAmount,
-} from '../store/slices/cart-items';
+} from '@/store/slices/cart-items';
 import { useCallback } from 'react';
 
 export const useCartItem = (slug: string) => {

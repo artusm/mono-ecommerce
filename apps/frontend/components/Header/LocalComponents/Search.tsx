@@ -1,5 +1,5 @@
 import debounce from 'lodash.debounce';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useSearchbarSearchLazyQuery } from '@ecommerce/shared/graphql/types';
 import { Searchbar } from '@ecommerce/shared/ui/searchbar';

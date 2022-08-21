@@ -1,5 +1,5 @@
 import { createSelector, createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { MAXIMUM_IN_CART } from '../../lib/constants';
+import { MAXIMUM_IN_CART } from '@/lib/constants';
 
 export interface CardItemsState {
   items: {

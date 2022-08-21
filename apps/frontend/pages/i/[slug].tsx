@@ -1,14 +1,14 @@
-import { GlobalSeo } from '../../types/GlobalSeo';
+import { GlobalSeo } from '@/types/GlobalSeo';
 import {
   ProductSlugQuery,
   useProductSlugQuery,
 } from '@ecommerce/shared/graphql/types';
-import { Layout } from '../../components/Layout';
+import { Layout } from '@/components/Layout';
 import { useRouter } from 'next/router';
-import { useMemo } from 'react';
-import { Product } from '../../scenes/Product';
-import { withGlobalSeo } from '../../hocs/with-global-seo';
-import { withApollo } from '../../hocs/with-apollo';
+import React, { useMemo } from 'react';
+import { Product } from '@/scenes/Product';
+import { withGlobalSeo } from '@/hocs/with-global-seo';
+import { withApollo } from '@/hocs/with-apollo';
 
 interface Props {
   globalSeo: GlobalSeo;

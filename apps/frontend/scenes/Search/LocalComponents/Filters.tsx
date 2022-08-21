@@ -1,8 +1,8 @@
 import { Select } from '@ecommerce/shared/ui/select';
 import clsx from 'clsx';
-import { PRICES, SORT } from '../../../lib/constants';
+import { PRICES, SORT } from '@/lib/constants';
 import { useRouter } from 'next/router';
-import { useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { CategoriesSearchQuery } from '@ecommerce/shared/graphql/types';
 
 interface Props {

@@ -1,4 +1,4 @@
-import { CartItemLogic } from '../../../components/CartItemLogic';
+import { CartItemLogic } from '@/components/CartItemLogic';
 import { ProductCartQuery } from '@ecommerce/shared/graphql/types';
 import clsx from 'clsx';
 import React from 'react';

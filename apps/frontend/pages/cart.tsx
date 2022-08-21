@@ -1,11 +1,12 @@
-import { Layout } from '../components/Layout';
-import { withGlobalSeo } from '../hocs/with-global-seo';
-import { GlobalSeo } from '../types/GlobalSeo';
-import { Cart } from '../scenes/Cart';
+import { Layout } from '@/components/Layout';
+import { withGlobalSeo } from '@/hocs/with-global-seo';
+import { GlobalSeo } from '@/types/GlobalSeo';
+import { Cart } from '@/scenes/Cart';
 import { useProductCartQuery } from '@ecommerce/shared/graphql/types';
-import { withApollo } from '../hocs/with-apollo';
+import { withApollo } from '@/hocs/with-apollo';
 import { useSelector } from 'react-redux';
-import { AppState } from '../store';
+import { AppState } from '@/store';
+import React from "react";
 
 interface Props {
   globalSeo: GlobalSeo;
