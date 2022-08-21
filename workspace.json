@@ -7,6 +7,7 @@
     "frontend-e2e": "apps/frontend-e2e",
     "shared-graphql": "libs/shared/graphql",
     "shared-ui": "libs/shared/ui",
+    "shared-ui-e2e": "apps/shared-ui-e2e",
     "shared-utils": "libs/shared/utils"
   }
 }

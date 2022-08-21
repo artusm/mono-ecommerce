@@ -9,12 +9,16 @@
     "../../../node_modules/@nrwl/react/typings/cssmodule.d.ts",
     "../../../node_modules/@nrwl/react/typings/image.d.ts"
   ],
-  "include": ["**/*.ts"],
+  "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
   "exclude": [
     "jest.config.ts",
     "**/*.spec.ts",
     "**/*.test.ts",
     "**/*.spec.ts",
-    "**/*.test.ts"
+    "**/*.test.ts",
+    "**/*.stories.ts",
+    "**/*.stories.js",
+    "**/*.stories.jsx",
+    "**/*.stories.tsx"
   ]
 }
