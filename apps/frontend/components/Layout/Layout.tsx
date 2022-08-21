@@ -6,6 +6,7 @@ import type { SimplifiedImage } from '@ecommerce/shared/graphql/refactored-types
 
 import { Head } from './Head';
 import Header from '../Header';
+import {Footer} from "@ecommerce/shared/ui/Footer";
 
 interface Props {
   children: ReactNode;
@@ -26,6 +27,7 @@ export const Layout: React.FC<Props> = ({ children, defaultSeo, seo }) => {
       <main className="mx-auto min-h-screen max-w-screen-xl px-4">
         {children}
       </main>
+      <Footer />
     </>
   );
 };
