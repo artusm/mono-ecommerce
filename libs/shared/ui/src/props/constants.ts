@@ -1,8 +1,9 @@
-import { ButtonProps } from '../lib/Button';
+import { ButtonProps } from '@ecommerce/shared/ui/Button';
 import {CartItemProps} from "@ecommerce/shared/ui/CartItem";
 import {ProductSidebarProps} from "@ecommerce/shared/ui/ProductSidebar";
 import {CartSidebarProps} from "@ecommerce/shared/ui/CartSidebar";
 import {CategoryCardProps} from "@ecommerce/shared/ui/CategoryCard";
+import {IconProps} from "@ecommerce/shared/ui/Icon";
 
 import cat from './cat.jpg';
 import cat2 from './cat2.jpeg';
@@ -82,4 +83,7 @@ export const CATEGORY_CARD_DEFAULT_PROPS: CategoryCardProps = {
     },
     slug: '1',
   },
+};
+export const ICON_DEFAULT_PROPS: IconProps = {
+  icon: 'cart',
 };
