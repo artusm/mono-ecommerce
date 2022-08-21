@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartSidebar should render successfully 1`] = `
+<aside
+  className="w-full flex flex-col md:(w-1/3 top-12 sticky h-full)"
+>
+  <h2
+    className="mb-2 flex justify-between items-center flex-wrap gap-1"
+  >
+    <span
+      className="font-semibold text-base"
+    >
+      Total
+    </span>
+    <span
+      className="font-bold text-xl"
+    >
+      100.00$
+    </span>
+  </h2>
+  <small
+    className="mb-8 inline-block"
+  >
+    Excluding delivery
+  </small>
+  <button
+    className="inline-block cursor-pointer transform-gpu transition-all active:scale-92 rounded-lg p-4 text-white bg-sky-600 hover:(bg-sky-700) active:(bg-sky-800)"
+    onClick={[Function]}
+    type="button"
+  >
+    <div
+      className="h-12 w-full flex items-center justify-between"
+    >
+      <div
+        className="h-full flex items-center justify-center font-bold text-lg select-none"
+      >
+        Checkout
+      </div>
+      <div
+        aria-hidden="true"
+        className="h-fit w-fit p-2 bg-white rounded-full"
+      >
+        <div
+          aria-hidden="true"
+          className="relative flex items-center select-none pointer-events-none h-4 w-4  sm:(h-6 w-6)"
+        >
+          <svg
+            className="feather feather-arrow-right "
+            fill="black"
+            height={24}
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            width={24}
+          >
+            <g
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<line x1=\\"5\\" y1=\\"12\\" x2=\\"19\\" y2=\\"12\\"></line><polyline points=\\"12 5 19 12 12 19\\"></polyline>",
+                }
+              }
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </button>
+</aside>
+`;

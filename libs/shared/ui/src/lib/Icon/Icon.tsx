@@ -1,8 +1,9 @@
 import FeatherIcon from 'feather-icons-react';
 import clsx from 'clsx';
 import { Spinner } from './Components/Spinner';
+import {SVGAttributes} from "react";
 
-export interface IconProps {
+export interface IconProps extends SVGAttributes<SVGElement> {
   icon?: keyof typeof ICONS;
   loading?: boolean;
   classes?: string;
@@ -16,6 +17,7 @@ export const ICONS = {
   user: 'user',
   arrowRight: 'arrow-right',
   arrowRightBlack: 'arrow-right',
+  'arrow-right': 'arrow-right',
 } as const;
 
 const SIZES = ['sm', 'base', 'lg'] as const;

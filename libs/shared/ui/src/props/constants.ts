@@ -1,6 +1,7 @@
 import { ButtonProps } from '../lib/Button';
 import {CartItemProps} from "@ecommerce/shared/ui/CartItem";
 import {ProductSidebarProps} from "@ecommerce/shared/ui/ProductSidebar";
+import {CartSidebarProps} from "@ecommerce/shared/ui/CartSidebar";
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -60,4 +61,13 @@ export const CART_ITEM_DEFAULT_PROPS: CartItemProps = {
   toggleFavorite: () => {
     console.log('favorite');
   },
+};
+
+export const CART_SIDEBAR_DEFAULT_PROPS: CartSidebarProps = {
+  cartTotal: 100,
+  isUser: true,
+  handleCheckoutClick: async () => {
+    console.log('checkout');
+  },
+  isLoading: false,
 };
