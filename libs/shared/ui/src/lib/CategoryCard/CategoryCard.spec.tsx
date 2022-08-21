@@ -1,7 +1,8 @@
 import { RenderResult, render } from '@testing-library/react';
 import { create } from 'react-test-renderer';
 
-import { CATEGORY_CARD_DEFAULT_PROPS } from '../../props/constants';
+import { CATEGORY_CARD_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
+
 import { CategoryCard } from './CategoryCard';
 
 describe('CategoryCard', () => {

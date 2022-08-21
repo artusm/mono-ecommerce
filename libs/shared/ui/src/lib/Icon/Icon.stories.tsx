@@ -1,5 +1,7 @@
-import { ICON_DEFAULT_PROPS } from '../../props/constants';
-import { Story, Meta } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
+
+import { ICON_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
+
 import { Icon, IconProps } from './Icon';
 
 export default {

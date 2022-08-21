@@ -1,6 +1,7 @@
 const crypto = require('crypto');
 
-const baseGenerate = (bytes = 16) => crypto.randomBytes(bytes).toString('base64');
+const baseGenerate = (bytes = 16) =>
+  crypto.randomBytes(bytes).toString('base64');
 
 const keys = [...new Array(3).keys()].map(() => baseGenerate(6));
 

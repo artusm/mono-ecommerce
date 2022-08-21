@@ -21,7 +21,7 @@ module.exports = {
     config.resolve.alias['next/link'] = require.resolve('./NextLink.jsx');
 
     const plugin = config.plugins.find(
-      (plugin) => plugin instanceof webpack.DefinePlugin
+      (plugin) => plugin instanceof webpack.DefinePlugin,
     );
     plugin.definitions['process.env.PUB_API_URL'] = JSON.stringify('/');
 

@@ -1,5 +1,7 @@
-import { BUTTON_DEFAULT_PROPS } from '../../props/constants';
-import { Story, Meta } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
+
+import { BUTTON_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
+
 import { Button, ButtonProps } from './Button';
 
 export default {

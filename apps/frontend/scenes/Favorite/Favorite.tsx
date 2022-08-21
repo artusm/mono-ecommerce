@@ -1,5 +1,6 @@
-import type { FavoriteProductsQuery } from '@ecommerce/shared/graphql/types';
 import React from 'react';
+
+import type { FavoriteProductsQuery } from '@ecommerce/shared/graphql/types';
 
 import { List } from './LocalComponents/List';
 

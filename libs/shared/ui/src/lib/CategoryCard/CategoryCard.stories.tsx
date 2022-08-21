@@ -1,5 +1,7 @@
-import { CATEGORY_CARD_DEFAULT_PROPS } from '../../props/constants';
-import { Story, Meta } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
+
+import { CATEGORY_CARD_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
+
 import { CategoryCard, CategoryCardProps } from './CategoryCard';
 
 export default {

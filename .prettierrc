@@ -5,7 +5,9 @@
   "trailingComma": "all",
   "semi": true,
   "importOrder": [
-    "^react$",
+    "^@testing-library/jest-dom$",
+    "^@testing-library(.*)|react-test-renderer$",
+    "^react|@storybook/react$",
     "^clsx|next\\/(.*)|feather-icons-react|lodash.debounce|react-markdown|react-redux|nextjs-progressbar|@apollo\\/(.*)|isomorphic-unfetch|querystring|next-redux-wrapper|redux-persist(.*)$",
     "^@ecommerce/shared/(.*)$",
     "^@/(.*)$",
