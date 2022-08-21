@@ -1,4 +1,4 @@
-import { ItemCardLogic } from '../../../components/ItemCardLogic';
+import { ItemCardLogic } from '@/components/ItemCardLogic';
 import { ProductSearchQuery } from '@ecommerce/shared/graphql/types';
 import clsx from 'clsx';
 import React from 'react';

@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { ItemCardLogic } from '../../../components/ItemCardLogic';
+import { ItemCardLogic } from '@/components/ItemCardLogic';
 import type { GetHomePageData } from '../Home';
 import React from 'react';
 

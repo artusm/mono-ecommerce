@@ -12,12 +12,6 @@ export const favoriteItemsSlice = createSlice({
   name: 'favoriteItems',
   initialState,
   reducers: {
-    // addToFavorite: (state: FavoriteItemsState, action: PayloadAction<string>) => {
-    //   state.slugs.add(action.payload);
-    // },
-    // removeFromFavorite: (state: FavoriteItemsState, action: PayloadAction<string>) => {
-    //   state.slugs.delete(action.payload);
-    // },
     toggleFavorite: (
       state: FavoriteItemsState,
       action: PayloadAction<string>

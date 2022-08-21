@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import React from "react";
 
 const NotFoundPage: React.FC = () => {
   return (

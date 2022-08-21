@@ -1,5 +1,4 @@
-import React from 'react';
-import { NavButton } from '@ecommerce/shared/ui/NavButton';
+import {FC} from 'react';
 import { Logo } from '@ecommerce/shared/ui/Logo';
 
 import CartIcon from './LocalComponents/CardIcon';
@@ -9,7 +8,7 @@ import { NavSearch } from './LocalComponents/Search';
 import { UserIcon } from './LocalComponents/UserIcon';
 import clsx from 'clsx';
 
-const index = () => {
+const index: FC = () => {
   return (
     <header
       className={clsx(

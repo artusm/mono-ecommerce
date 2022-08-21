@@ -3,8 +3,9 @@ import { ProductSidebar } from '@ecommerce/shared/ui/ProductSidebar';
 import { ProductInformation } from '@ecommerce/shared/ui/ProductInformation';
 import { ProductGallery } from '@ecommerce/shared/ui/ProductGallery';
 import clsx from 'clsx';
-import { useFavorite } from '../../hooks/useFavorite';
-import { useCartItem } from '../../hooks/useCartItem';
+import { useFavorite } from '@/hooks/useFavorite';
+import { useCartItem } from '@/hooks/useCartItem';
+import React from "react";
 
 interface Props {
   product: NonNullable<
