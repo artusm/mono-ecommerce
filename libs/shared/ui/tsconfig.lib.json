@@ -5,6 +5,10 @@
     "declaration": true,
     "types": ["node"]
   },
+  "files": [
+    "../../../node_modules/@nrwl/react/typings/cssmodule.d.ts",
+    "../../../node_modules/@nrwl/react/typings/image.d.ts"
+  ],
   "include": ["**/*.ts"],
   "exclude": ["jest.config.ts", "**/*.spec.ts", "**/*.test.ts", "**/*.spec.ts", "**/*.test.ts"]
 }
