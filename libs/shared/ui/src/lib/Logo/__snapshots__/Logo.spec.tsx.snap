@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo should render successfully 1`] = `
+<a
+  className="-mb-4 w-max flex flex-col items-center"
+  href="/"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  title="fake shop"
+>
+  <div
+    aria-hidden="true"
+    className="flex font-bold text-2xl leading-4 uppercase pointer-events-none select-none animate-jello"
+    data-testid="first-word"
+  >
+    <span
+      className="inline-block animate-bounce"
+      style={
+        Object {
+          "animationDelay": "-0ms",
+        }
+      }
+    >
+      c
+    </span>
+    <span
+      className="inline-block animate-bounce"
+      style={
+        Object {
+          "animationDelay": "-50ms",
+        }
+      }
+    >
+      a
+    </span>
+    <span
+      className="inline-block animate-bounce"
+      style={
+        Object {
+          "animationDelay": "-100ms",
+        }
+      }
+    >
+      t
+    </span>
+  </div>
+  <div
+    aria-hidden="true"
+    className="flex font-bold text-2xl uppercase pointer-events-none select-none animate-jello"
+    data-testid="second-word"
+  >
+    <span
+      className="inline-block animate-bounce"
+      style={
+        Object {
+          "animationDelay": "-0ms",
+        }
+      }
+    >
+      s
+    </span>
+    <span
+      className="inline-block animate-bounce"
+      style={
+        Object {
+          "animationDelay": "-50ms",
+        }
+      }
+    >
+      h
+    </span>
+    <span
+      className="inline-block animate-bounce"
+      style={
+        Object {
+          "animationDelay": "-100ms",
+        }
+      }
+    >
+      o
+    </span>
+    <span
+      className="inline-block animate-bounce"
+      style={
+        Object {
+          "animationDelay": "-150ms",
+        }
+      }
+    >
+      p
+    </span>
+  </div>
+</a>
+`;

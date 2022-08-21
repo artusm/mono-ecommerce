@@ -1,19 +1,12 @@
 import Link from 'next/link';
 import { useIsomorphicLayoutEffect } from '@ecommerce/shared/utils/hooks/useIsomorphicLayoutEffect';
-import { useRef } from 'react';
 import clsx from 'clsx';
 
 /* eslint-disable-next-line */
 export interface LogoProps {}
 
-const cachedTimeFirst: number[] = [];
-const cachedTimeSecond: number[] = [];
-
 export const Logo: React.FC<LogoProps> = () => {
-  const [firstWord, secondWord] = 'simple shop'.split(' ');
-
-  const firstWordChars = useRef<HTMLSpanElement[]>([]);
-  const secondWordChars = useRef<HTMLSpanElement[]>([]);
+  const [firstWord, secondWord] = 'cat shop'.split(' ');
 
   useIsomorphicLayoutEffect(() => {}, []);
 
@@ -37,9 +30,6 @@ export const Logo: React.FC<LogoProps> = () => {
             <span
               className={clsx('inline-block', 'animate-bounce')}
               style={{ animationDelay: `-${index * 50}ms` }}
-              ref={(el) => {
-                if (el) firstWordChars.current[index] = el;
-              }}
               key={char}
             >
               {char}
@@ -60,9 +50,6 @@ export const Logo: React.FC<LogoProps> = () => {
             <span
               className={clsx('inline-block', 'animate-bounce')}
               style={{ animationDelay: `-${index * 50}ms` }}
-              ref={(el) => {
-                if (el) secondWordChars.current[index] = el;
-              }}
               key={char}
             >
               {char}
