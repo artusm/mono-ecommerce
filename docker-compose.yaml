@@ -18,5 +18,4 @@ volumes:
 
 networks:
   strapi:
-    name: Strapi
     driver: bridge

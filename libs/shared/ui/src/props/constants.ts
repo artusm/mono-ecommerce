@@ -10,6 +10,7 @@ import { ProductInformationProps } from '@ecommerce/shared/ui/ProductInformation
 import { ProductSidebarProps } from '@ecommerce/shared/ui/ProductSidebar';
 import { SearchbarItemProps } from '@ecommerce/shared/ui/SearchbarItem';
 import { SelectProps } from '@ecommerce/shared/ui/Select';
+import {SearchbarProps} from "@ecommerce/shared/ui/Searchbar";
 
 import cat2 from './cat2.jpeg';
 import cat from './cat.jpg';
@@ -199,4 +200,21 @@ export const SELECT_DEFAULT_PROPS: Required<
   initial: ['value1'],
   alignClasses: '',
   onChange: () => console.log('changed'),
+};
+export const SEARCHBAR_ITEM: SearchbarProps['items'][number] = {
+  id: '1',
+  attributes: {
+    slug: 'cat-cat',
+    smallDescription: 'smallDescription',
+    name: 'Cat Cat',
+    images: {
+      data: [
+        {
+          attributes: {
+            url: cat,
+          },
+        },
+      ],
+    },
+  },
 };
