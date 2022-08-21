@@ -1,12 +1,12 @@
 import { ButtonProps } from '@ecommerce/shared/ui/Button';
 import {CartItemProps} from "@ecommerce/shared/ui/CartItem";
-import {ProductSidebarProps} from "@ecommerce/shared/ui/ProductSidebar";
 import {CartSidebarProps} from "@ecommerce/shared/ui/CartSidebar";
 import {CategoryCardProps} from "@ecommerce/shared/ui/CategoryCard";
 import {IconProps} from "@ecommerce/shared/ui/Icon";
 import {ItemCardProps} from "@ecommerce/shared/ui/ItemCard";
 import {NavButtonProps} from "@ecommerce/shared/ui/NavButton";
 import {ProductGalleryProps} from "@ecommerce/shared/ui/ProductGallery";
+import {ProductSidebarProps} from "@ecommerce/shared/ui/ProductSidebar";
 
 import cat from './cat.jpg';
 import cat2 from './cat2.jpeg';
@@ -144,4 +144,19 @@ export const PRODUCT_INFORMATION_DEFAULT_PROPS: ProductInformationProps = {
     title: `Title${index + 1}`,
     content: `content${index + 1}`,
   })),
+};
+
+export const PRODUCT_SIDEBAR_DEFAULT_PROPS: ProductSidebarProps = {
+  product: PRODUCT,
+  handleCartClick: () => {
+    console.log('cart');
+  },
+  handleRemoveCartClick: () => {
+    console.log('remove cart');
+  },
+  handleFavoriteClick: () => {
+    console.log('favorite');
+  },
+  inCartAmount: 0,
+  isFavorite: true,
 };
