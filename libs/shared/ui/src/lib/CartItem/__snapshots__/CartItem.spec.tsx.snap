@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItem should render successfully 1`] = `
+<div
+  className="w-full flex"
+>
+  <a
+    href="/i/some-name"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    <div
+      className="relative aspect-square w-28 object-cover bg-gray-100"
+    >
+      Next image stub
+    </div>
+  </a>
+  <div
+    className="ml-8 w-full flex flex-col"
+  >
+    <div
+      className="w-full flex flex-wrap items-center justify-between gap-x-1"
+    >
+      <a
+        className="text-base font-semibold uppercase hover:(underline)"
+        href="/i/some-name"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Some name
+      </a>
+      <span
+        className="font-bold"
+      >
+        65.00$
+      </span>
+    </div>
+    <small
+      className="mt-1"
+    >
+      Small Description
+    </small>
+    <div
+      className="mt-auto flex gap-8 items-center flex-wrap md:(gap-4) lg:(gap-8)"
+    >
+      <div
+        className="h-8 flex"
+      >
+        <button
+          className="h-full w-8 relative group flex items-center justify-center border rounded-l-xl transition hover:(bg-black text-white border-black)"
+          onClick={[Function]}
+          title="remove 1 item"
+          type="button"
+        >
+          <div
+            aria-hidden="true"
+            className="h-1/2 w-1/2 relative group-hover:(filter invert brightness-0)"
+          >
+            <svg
+              className="feather feather-minus "
+              fill="none"
+              height={15}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              width={15}
+            >
+              <g
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<line x1=\\"5\\" y1=\\"12\\" x2=\\"19\\" y2=\\"12\\"></line>",
+                  }
+                }
+              />
+            </svg>
+          </div>
+        </button>
+        <span
+          className="w-8 flex items-center justify-center border-t border-b"
+        >
+          1
+        </span>
+        <button
+          className="h-full w-8 relative group flex items-center justify-center border rounded-r-xl transition hover:(bg-black text-white border-black)"
+          onClick={[Function]}
+          title="add 1 item"
+          type="button"
+        >
+          <div
+            aria-hidden="true"
+            className="h-1/2 w-1/2 relative group-hover:(filter invert brightness-0)"
+          >
+            <svg
+              className="feather feather-plus "
+              fill="none"
+              height={15}
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              width={15}
+            >
+              <g
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<line x1=\\"12\\" y1=\\"5\\" x2=\\"12\\" y2=\\"19\\"></line><line x1=\\"5\\" y1=\\"12\\" x2=\\"19\\" y2=\\"12\\"></line>",
+                  }
+                }
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div
+        className="gap-8 items-center hidden text-xs xs:(flex) sm:(text-base) md:(text-xs gap-4) lg:(text-base gap-8)"
+      >
+        <button
+          className="hover:(underline)"
+          onClick={[Function]}
+          type="button"
+        >
+          Remove item
+        </button>
+        <button
+          className="hover:(underline)"
+          onClick={[Function]}
+          type="button"
+        >
+          Add to favorites
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
