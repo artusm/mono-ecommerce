@@ -18,7 +18,9 @@ export const ICONS = {
   arrowRight: 'arrow-right',
   arrowRightBlack: 'arrow-right',
   'arrow-right': 'arrow-right',
-  heart: 'heart'
+  heart: 'heart',
+  search: 'search',
+  x: 'x',
 } as const;
 
 const SIZES = ['sm', 'base', 'lg'] as const;
