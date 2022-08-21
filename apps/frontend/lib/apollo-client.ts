@@ -3,7 +3,7 @@ import fetch from 'isomorphic-unfetch';
 
 const createHttpLink = (headers) => {
   const httpLink = new HttpLink({
-    uri: process.env['NX_GRAPHQL_URL'] ?? 'http://localhost:1337/graphql',
+    uri: process.env['PUB_GRAPHQL_URL'] ?? 'http://localhost:1337/graphql',
     credentials: 'include',
     headers,
     fetch,
