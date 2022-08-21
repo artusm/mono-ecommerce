@@ -4,6 +4,7 @@ import {ProductSidebarProps} from "@ecommerce/shared/ui/ProductSidebar";
 import {CartSidebarProps} from "@ecommerce/shared/ui/CartSidebar";
 import {CategoryCardProps} from "@ecommerce/shared/ui/CategoryCard";
 import {IconProps} from "@ecommerce/shared/ui/Icon";
+import {ItemCardProps} from "@ecommerce/shared/ui/ItemCard";
 
 import cat from './cat.jpg';
 import cat2 from './cat2.jpeg';
@@ -34,6 +35,28 @@ export const PRODUCT: ProductSidebarProps['product'] = {
       content: 'content1',
     },
   ],
+};
+
+export const ITEM: ItemCardProps['item'] = {
+  slug: 'cat-cat',
+  price: 65,
+  name: 'cat cat',
+  images: {
+    data: [
+      {
+        attributes: {
+          url: cat,
+        },
+      },
+      {
+        attributes: {
+          url: cat2,
+        },
+      },
+    ],
+  },
+  smallDescription: 'smallDescription',
+  description: 'description',
 };
 
 export const BUTTON_DEFAULT_PROPS: ButtonProps = {
@@ -86,4 +109,12 @@ export const CATEGORY_CARD_DEFAULT_PROPS: CategoryCardProps = {
 };
 export const ICON_DEFAULT_PROPS: IconProps = {
   icon: 'cart',
+};
+
+export const ITEM_CARD_DEFAULT_PROPS: ItemCardProps = {
+  item: ITEM,
+  size: 'base',
+  handleCartClick: () => console.log('cart clicked'),
+  handleAmountCartClick: () => console.log('amount cart clicked'),
+  handleFavoriteClick: () => console.log('favorite clicked'),
 };
