@@ -6,6 +6,8 @@ import {CategoryCardProps} from "@ecommerce/shared/ui/CategoryCard";
 import {IconProps} from "@ecommerce/shared/ui/Icon";
 import {ItemCardProps} from "@ecommerce/shared/ui/ItemCard";
 
+import {NavButtonProps} from "@ecommerce/shared/ui/NavButton";
+
 import cat from './cat.jpg';
 import cat2 from './cat2.jpeg';
 
@@ -117,4 +119,7 @@ export const ITEM_CARD_DEFAULT_PROPS: ItemCardProps = {
   handleCartClick: () => console.log('cart clicked'),
   handleAmountCartClick: () => console.log('amount cart clicked'),
   handleFavoriteClick: () => console.log('favorite clicked'),
+};
+export const NAV_BUTTON_DEFAULT_PROPS: NavButtonProps = {
+  type: 'heart',
 };
