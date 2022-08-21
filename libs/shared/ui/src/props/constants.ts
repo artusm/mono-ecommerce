@@ -11,6 +11,7 @@ import {ProductSidebarProps} from "@ecommerce/shared/ui/ProductSidebar";
 import cat from './cat.jpg';
 import cat2 from './cat2.jpeg';
 import {ProductInformationProps} from "@ecommerce/shared/ui/ProductInformation";
+import {SearchbarItemProps} from "@ecommerce/shared/ui/SearchbarItem";
 
 export const PRODUCT: ProductSidebarProps['product'] = {
   slug: 'some-name',
@@ -159,4 +160,29 @@ export const PRODUCT_SIDEBAR_DEFAULT_PROPS: ProductSidebarProps = {
   },
   inCartAmount: 0,
   isFavorite: true,
+};
+
+export const SEARCHBAR_ITEM_DEFAULT_PROPS: SearchbarItemProps = {
+  item: {
+    slug: 'cat-cat',
+    name: 'cat cat',
+    images: {
+      data: [
+        {
+          attributes: {
+            url: cat,
+          },
+        },
+        {
+          attributes: {
+            url: cat2,
+          },
+        },
+      ],
+    },
+    smallDescription: 'smallDescription',
+  },
+  handleClick: () => {
+    console.log('clicked')
+  },
 };

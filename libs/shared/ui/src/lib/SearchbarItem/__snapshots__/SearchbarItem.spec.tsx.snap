@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchbarItem should render successfully 1`] = `
+<li
+  className="list-none py-2"
+>
+  <a
+    href="/i/cat-cat"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    title="cat cat"
+  >
+    <div
+      className="flex gap-2 items-center"
+    >
+      <div
+        className="bg-gray-100 h-12 w-12"
+      >
+        Next image stub
+      </div>
+      <div
+        className="flex flex-col justify-between"
+      >
+        <span
+          className="text-sm uppercase hover:(underline)"
+        >
+          cat cat
+        </span>
+        <span
+          className="text-xs text-gray-500"
+        >
+          smallDescription
+        </span>
+      </div>
+    </div>
+  </a>
+</li>
+`;
