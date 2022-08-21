@@ -3,10 +3,10 @@ import { createItemHref } from '@ecommerce/shared/utils/url';
 import { formatPrice } from '@ecommerce/shared/utils/format-price';
 import clsx from 'clsx';
 import { useMemo } from 'react';
-import { AmountControl } from './Components/AmountControl';
-import { BaseControl } from './Components/BaseControl';
-import { CoverImage } from './Components/CoverImage';
-import { Name } from './Components/Name';
+import { AmountControl } from './LocalComponents/AmountControl';
+import { BaseControl } from './LocalComponents/BaseControl';
+import { CoverImage } from './LocalComponents/CoverImage';
+import { Name } from './LocalComponents/Name';
 
 export interface CartItemProps {
   item: NonNullable<

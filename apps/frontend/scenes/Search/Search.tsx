@@ -2,8 +2,8 @@ import {
   CategoriesSearchQuery,
   ProductSearchQuery,
 } from '@ecommerce/shared/graphql/types';
-import { Filters } from './Components/Filters';
-import { Products } from './Components/Products';
+import { Filters } from './LocalComponents/Filters';
+import { Products } from './LocalComponents/Products';
 import React from 'react';
 
 interface Props {

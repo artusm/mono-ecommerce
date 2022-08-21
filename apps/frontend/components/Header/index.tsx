@@ -2,11 +2,11 @@ import React from 'react';
 import { NavButton } from '@ecommerce/shared/ui/NavButton';
 import { Logo } from '@ecommerce/shared/ui/Logo';
 
-import CartIcon from './Components/CardIcon';
-import FavoriteIcon from './Components/FavoriteIcon';
-import { NavSearch } from './Components/Search';
+import CartIcon from './LocalComponents/CardIcon';
+import FavoriteIcon from './LocalComponents/FavoriteIcon';
+import { NavSearch } from './LocalComponents/Search';
 
-import { UserIcon } from './Components/UserIcon';
+import { UserIcon } from './LocalComponents/UserIcon';
 import clsx from 'clsx';
 
 const index = () => {

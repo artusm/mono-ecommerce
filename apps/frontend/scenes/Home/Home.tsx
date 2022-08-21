@@ -1,6 +1,6 @@
 import { HomePageQuery } from '@ecommerce/shared/graphql/types';
-import { CategoriesSection } from './Components/CategoriesSection';
-import { ProductsSection } from './Components/ProductsSection';
+import { CategoriesSection } from './LocalComponents/CategoriesSection';
+import { ProductsSection } from './LocalComponents/ProductsSection';
 
 type HomePageAttributes = NonNullable<
   NonNullable<NonNullable<HomePageQuery['homePage']>['data']>['attributes']

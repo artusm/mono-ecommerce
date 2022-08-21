@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 import { GlobalSeo } from '@ecommerce/shared/graphql/types';
 import type { SimplifiedImage } from '@ecommerce/shared/graphql/refactored-types';
 
-import { Head } from './Head';
+import { Head } from './LocalComponents/Head';
 import Header from '../Header';
 import {Footer} from "@ecommerce/shared/ui/Footer";
 

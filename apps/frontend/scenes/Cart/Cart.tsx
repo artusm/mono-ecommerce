@@ -1,7 +1,7 @@
 import { ProductCartQuery } from '@ecommerce/shared/graphql/types';
 import React, { useMemo, useState } from 'react';
 import { CartSidebar } from '@ecommerce/shared/ui/CartSidebar';
-import { List } from './Components/List';
+import { List } from './LocalComponents/List';
 import clsx from 'clsx';
 import { useSelector } from 'react-redux';
 import { AppState } from '../../store';
