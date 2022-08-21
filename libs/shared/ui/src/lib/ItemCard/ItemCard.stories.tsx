@@ -1,5 +1,7 @@
-import { Story, Meta } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
+
 import { ITEM_CARD_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
+
 import { ItemCard, ItemCardProps } from './ItemCard';
 
 export default {

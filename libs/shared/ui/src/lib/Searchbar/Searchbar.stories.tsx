@@ -1,6 +1,8 @@
-import { Story, Meta } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
 import { useState } from 'react';
+
 import { SEARCHBAR_ITEM } from '@ecommerce/shared/props/constants';
+
 import { Searchbar, SearchbarProps } from './Searchbar';
 
 export default {

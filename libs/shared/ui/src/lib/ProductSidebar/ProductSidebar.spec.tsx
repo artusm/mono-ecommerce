@@ -1,10 +1,11 @@
 import '@testing-library/jest-dom';
+
 import { RenderResult, render, screen } from '@testing-library/react';
 import { create } from 'react-test-renderer';
 
+import { PRODUCT_SIDEBAR_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
 import { formatPrice } from '@ecommerce/shared/utils/format-price';
 
-import { PRODUCT_SIDEBAR_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
 import { ProductSidebar } from './ProductSidebar';
 
 describe('ProductSidebar', () => {

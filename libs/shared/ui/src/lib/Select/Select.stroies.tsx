@@ -1,5 +1,7 @@
+import { Meta, Story } from '@storybook/react';
+
 import { SELECT_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
-import { Story, Meta } from '@storybook/react';
+
 import { Select, SelectProps } from './Select';
 
 export default {

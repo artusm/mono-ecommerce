@@ -1,7 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import { create } from 'react-test-renderer';
 
-import { ITEM, SEARCHBAR_ITEM_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
+import {
+  ITEM,
+  SEARCHBAR_ITEM_DEFAULT_PROPS,
+} from '@ecommerce/shared/props/constants';
+
 import { SearchbarItem } from './SearchbarItem';
 
 describe('SearchbarItem', () => {

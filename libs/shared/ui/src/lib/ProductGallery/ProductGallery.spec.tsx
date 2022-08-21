@@ -1,8 +1,10 @@
 import '@testing-library/jest-dom';
+
 import { RenderResult, render, screen } from '@testing-library/react';
 import { create } from 'react-test-renderer';
 
 import { PRODUCT_GALLERY_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
+
 import { ProductGallery } from './ProductGallery';
 
 describe('ProductGallery', () => {

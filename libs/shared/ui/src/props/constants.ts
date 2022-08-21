@@ -8,9 +8,9 @@ import { NavButtonProps } from '@ecommerce/shared/ui/NavButton';
 import { ProductGalleryProps } from '@ecommerce/shared/ui/ProductGallery';
 import { ProductInformationProps } from '@ecommerce/shared/ui/ProductInformation';
 import { ProductSidebarProps } from '@ecommerce/shared/ui/ProductSidebar';
+import { SearchbarProps } from '@ecommerce/shared/ui/Searchbar';
 import { SearchbarItemProps } from '@ecommerce/shared/ui/SearchbarItem';
 import { SelectProps } from '@ecommerce/shared/ui/Select';
-import {SearchbarProps} from "@ecommerce/shared/ui/Searchbar";
 
 import cat2 from './cat2.jpeg';
 import cat from './cat.jpg';

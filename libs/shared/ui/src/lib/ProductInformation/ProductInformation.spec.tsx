@@ -1,4 +1,5 @@
 import '@testing-library/jest-dom';
+
 import {
   RenderResult,
   fireEvent,
@@ -11,6 +12,7 @@ import { create } from 'react-test-renderer';
 import React from 'react';
 
 import { PRODUCT_INFORMATION_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
+
 import { ProductInformation } from './ProductInformation';
 
 jest.mock('react-markdown', () => (props: { children: React.ReactNode }) => {

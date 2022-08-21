@@ -1,10 +1,11 @@
 import '@testing-library/jest-dom';
+
 import { fireEvent, render, screen } from '@testing-library/react';
 import { create } from 'react-test-renderer';
 
+import { ITEM_CARD_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
 import { formatPrice } from '@ecommerce/shared/utils/format-price';
 
-import { ITEM_CARD_DEFAULT_PROPS } from '@ecommerce/shared/props/constants';
 import { ItemCard, createLabel } from './ItemCard';
 
 describe('ItemCard', () => {
