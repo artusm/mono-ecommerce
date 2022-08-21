@@ -1,5 +1,5 @@
 import { render, RenderResult, screen } from '@testing-library/react';
-import {create} from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 import '@testing-library/jest-dom';
 
 import { CartItem } from './CartItem';
@@ -16,8 +16,7 @@ describe('CartItem', () => {
   it('should render successfully', () => {
     const { baseElement } = renderResult;
 
-    const tree = create(<CartItem {...CART_ITEM_DEFAULT_PROPS} />)
-      .toJSON();
+    const tree = create(<CartItem {...CART_ITEM_DEFAULT_PROPS} />).toJSON();
     expect(tree).toMatchSnapshot();
 
     expect(baseElement).toBeTruthy();

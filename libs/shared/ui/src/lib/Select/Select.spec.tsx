@@ -1,5 +1,5 @@
 import { render, RenderResult } from '@testing-library/react';
-import {create} from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 import '@testing-library/jest-dom';
 
 import { SELECT_DEFAULT_PROPS } from '../../props/constants';

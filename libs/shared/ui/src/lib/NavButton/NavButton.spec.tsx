@@ -1,6 +1,6 @@
 import { NAV_BUTTON_DEFAULT_PROPS } from '../../props/constants';
 import { render, RenderResult, screen } from '@testing-library/react';
-import {create} from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 import '@testing-library/jest-dom';
 
 import { getHref, NavButton } from './NavButton';

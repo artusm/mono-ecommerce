@@ -1,19 +1,18 @@
 import { ButtonProps } from '@ecommerce/shared/ui/Button';
-import {CartItemProps} from "@ecommerce/shared/ui/CartItem";
-import {CartSidebarProps} from "@ecommerce/shared/ui/CartSidebar";
-import {CategoryCardProps} from "@ecommerce/shared/ui/CategoryCard";
-import {IconProps} from "@ecommerce/shared/ui/Icon";
-import {ItemCardProps} from "@ecommerce/shared/ui/ItemCard";
-import {NavButtonProps} from "@ecommerce/shared/ui/NavButton";
-import {ProductGalleryProps} from "@ecommerce/shared/ui/ProductGallery";
-import {ProductSidebarProps} from "@ecommerce/shared/ui/ProductSidebar";
-import {ProductInformationProps} from "@ecommerce/shared/ui/ProductInformation";
-import {SearchbarItemProps} from "@ecommerce/shared/ui/SearchbarItem";
-import {SelectProps} from "@ecommerce/shared/ui/Select";
+import { CartItemProps } from '@ecommerce/shared/ui/CartItem';
+import { CartSidebarProps } from '@ecommerce/shared/ui/CartSidebar';
+import { CategoryCardProps } from '@ecommerce/shared/ui/CategoryCard';
+import { IconProps } from '@ecommerce/shared/ui/Icon';
+import { ItemCardProps } from '@ecommerce/shared/ui/ItemCard';
+import { NavButtonProps } from '@ecommerce/shared/ui/NavButton';
+import { ProductGalleryProps } from '@ecommerce/shared/ui/ProductGallery';
+import { ProductSidebarProps } from '@ecommerce/shared/ui/ProductSidebar';
+import { ProductInformationProps } from '@ecommerce/shared/ui/ProductInformation';
+import { SearchbarItemProps } from '@ecommerce/shared/ui/SearchbarItem';
+import { SelectProps } from '@ecommerce/shared/ui/Select';
 
 import cat from './cat.jpg';
 import cat2 from './cat2.jpeg';
-
 
 export const PRODUCT: ProductSidebarProps['product'] = {
   slug: 'some-name',
@@ -101,8 +100,7 @@ export const CART_SIDEBAR_DEFAULT_PROPS: CartSidebarProps = {
 
 export const CATEGORY_CARD_DEFAULT_PROPS: CategoryCardProps = {
   category: {
-    smallDescription:
-      'smalll des',
+    smallDescription: 'smalll des',
     image: {
       data: {
         attributes: {
@@ -185,7 +183,7 @@ export const SEARCHBAR_ITEM_DEFAULT_PROPS: SearchbarItemProps = {
     smallDescription: 'smallDescription',
   },
   handleClick: () => {
-    console.log('clicked')
+    console.log('clicked');
   },
 };
 
@@ -196,7 +194,7 @@ export const SELECT_ITEM = {
 
 export const SELECT_DEFAULT_PROPS: Required<
   Omit<SelectProps, 'placeholder' | 'multiple'>
-  > = {
+> = {
   items: [SELECT_ITEM],
   initial: ['value1'],
   alignClasses: '',

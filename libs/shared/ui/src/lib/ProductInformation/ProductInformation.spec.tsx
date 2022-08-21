@@ -6,12 +6,11 @@ import {
   screen,
   waitFor,
 } from '@testing-library/react';
-import {create} from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 import '@testing-library/jest-dom';
 
 import { ProductInformation } from './ProductInformation';
 import { PRODUCT_INFORMATION_DEFAULT_PROPS } from '../../props/constants';
-
 
 jest.mock('react-markdown', () => (props: { children: React.ReactNode }) => {
   const ComponentToMock: React.FC<{ children: React.ReactNode }> = (props) => (
@@ -34,8 +33,9 @@ describe('ProductInformation', () => {
   it('should render successfully', () => {
     const { baseElement } = renderResult;
 
-    const tree = create(<ProductInformation {...PRODUCT_INFORMATION_DEFAULT_PROPS} />)
-      .toJSON();
+    const tree = create(
+      <ProductInformation {...PRODUCT_INFORMATION_DEFAULT_PROPS} />
+    ).toJSON();
     expect(tree).toMatchSnapshot();
 
     expect(baseElement).toBeTruthy();

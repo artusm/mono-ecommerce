@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom';
-import {create} from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 import { fireEvent, render, screen } from '@testing-library/react';
 
 import { ItemCard, createLabel } from './ItemCard';
