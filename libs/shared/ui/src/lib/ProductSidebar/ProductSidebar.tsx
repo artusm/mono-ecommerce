@@ -1,8 +1,8 @@
 import { ProductSlugQuery } from '@ecommerce/shared/graphql/types';
 import { formatPrice } from '@ecommerce/shared/utils/format-price';
 import clsx from 'clsx';
-import { Cart } from './Components/Cart';
-import { Favorite } from './Components/Favorite';
+import { Cart } from './LocalComponents/Cart';
+import { Favorite } from './LocalComponents/Favorite';
 
 export interface ProductSidebarProps {
   product: NonNullable<

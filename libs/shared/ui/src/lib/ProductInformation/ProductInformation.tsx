@@ -1,5 +1,5 @@
 import type { ComponentProductInformationSection } from '@ecommerce/shared/graphql/types';
-import { Item } from './Components/Item';
+import { Item } from './LocalComponents/Item';
 
 export interface ProductInformationProps {
   information: (Omit<ComponentProductInformationSection, 'id'> | null)[];

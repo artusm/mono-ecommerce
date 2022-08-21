@@ -4,11 +4,11 @@ import { handleBlur } from '@ecommerce/shared/utils/handle-blur';
 import { createItemHref } from '@ecommerce/shared/utils/url';
 import type { Product } from '@ecommerce/shared/graphql/refactored-types';
 import Link from 'next/link';
-import { CoverImage } from './Components/CoverImage';
-import { Information } from './Components/Information';
-import { Cart } from './Components/Cart';
-import { Amount } from './Components/Amount';
-import { Favorite } from './Components/Favorite';
+import { CoverImage } from './LocalComponents/CoverImage';
+import { Information } from './LocalComponents/Information';
+import { Cart } from './LocalComponents/Cart';
+import { Amount } from './LocalComponents/Amount';
+import { Favorite } from './LocalComponents/Favorite';
 
 export interface ItemCardProps {
   item: Product;

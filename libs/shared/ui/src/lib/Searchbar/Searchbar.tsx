@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import clsx from 'clsx';
 import { handleBlur } from '@ecommerce/shared/utils/handle-blur';
 import type { SearchbarSearchQuery } from '@ecommerce/shared/graphql/types';
-import { Control } from './Components/Control';
-import { List } from './Components/List';
+import { Control } from './LocalComponents/Control';
+import { List } from './LocalComponents/List';
 import FeatherIcon from 'feather-icons-react';
 
 export type Items = NonNullable<SearchbarSearchQuery['products']>['data'];

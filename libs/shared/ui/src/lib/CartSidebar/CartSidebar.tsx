@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { formatPrice } from '@ecommerce/shared/utils/format-price';
-import { Checkout } from './Components/Checkout';
+import { Checkout } from './LocalComponents/Checkout';
 
 export interface CartSidebarProps {
   cartTotal: number;
