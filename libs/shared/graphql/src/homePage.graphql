@@ -1,44 +1,44 @@
 query HomePage {
-    homePage {
-        data {
+  homePage {
+    data {
+      attributes {
+        products {
+          data {
+            id
             attributes {
-                products {
-                    data {
-                        id
-                        attributes {
-                            price
-                            description
-                            slug
-                            smallDescription
-                            name
-                            images {
-                                data {
-                                    attributes {
-                                        url
-                                    }
-                                }
-                            }
-                        }
-                    }
+              price
+              description
+              slug
+              smallDescription
+              name
+              images {
+                data {
+                  attributes {
+                    url
+                  }
                 }
-                categories {
-                    data {
-                        id
-                        attributes {
-                            name
-                            slug
-                            smallDescription
-                            image {
-                                data {
-                                    attributes {
-                                        url
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+              }
             }
+          }
         }
+        categories {
+          data {
+            id
+            attributes {
+              name
+              slug
+              smallDescription
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }

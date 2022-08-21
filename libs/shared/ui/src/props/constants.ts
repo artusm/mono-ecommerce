@@ -15,188 +15,188 @@ import cat2 from './cat2.jpeg';
 import cat from './cat.jpg';
 
 export const PRODUCT: ProductSidebarProps['product'] = {
-    slug: 'some-name',
-    price: 65,
-    name: 'Some name',
-    images: {
-        data: [
-            {
-                attributes: {
-                    url: cat,
-                },
-            },
-            {
-                attributes: {
-                    url: cat2,
-                },
-            },
-        ],
-    },
-    smallDescription: 'Small Description',
-    description: 'Description',
-    information: [
-        {
-            title: 'Title1',
-            content: 'content1',
+  slug: 'some-name',
+  price: 65,
+  name: 'Some name',
+  images: {
+    data: [
+      {
+        attributes: {
+          url: cat,
         },
+      },
+      {
+        attributes: {
+          url: cat2,
+        },
+      },
     ],
+  },
+  smallDescription: 'Small Description',
+  description: 'Description',
+  information: [
+    {
+      title: 'Title1',
+      content: 'content1',
+    },
+  ],
 };
 
 export const ITEM: ItemCardProps['item'] = {
-    slug: 'cat-cat',
-    price: 65,
-    name: 'cat cat',
-    images: {
-        data: [
-            {
-                attributes: {
-                    url: cat,
-                },
-            },
-            {
-                attributes: {
-                    url: cat2,
-                },
-            },
-        ],
-    },
-    smallDescription: 'smallDescription',
-    description: 'description',
+  slug: 'cat-cat',
+  price: 65,
+  name: 'cat cat',
+  images: {
+    data: [
+      {
+        attributes: {
+          url: cat,
+        },
+      },
+      {
+        attributes: {
+          url: cat2,
+        },
+      },
+    ],
+  },
+  smallDescription: 'smallDescription',
+  description: 'description',
 };
 
 export const BUTTON_DEFAULT_PROPS: ButtonProps = {
-    children: 'hello',
-    tag: 'button',
-    size: 'base',
-    type: 'primary',
-    round: 'full',
+  children: 'hello',
+  tag: 'button',
+  size: 'base',
+  type: 'primary',
+  round: 'full',
 };
 
 export const CART_ITEM_DEFAULT_PROPS: CartItemProps = {
-    inCartAmount: 1,
-    item: PRODUCT,
-    handleCartMinusClick: () => {
-        console.log('cart minus');
-    },
-    handleCartPlusClick: () => {
-        console.log('cart plus');
-    },
-    handleRemoveFromCart: () => {
-        console.log('cart remove');
-    },
-    toggleFavorite: () => {
-        console.log('favorite');
-    },
+  inCartAmount: 1,
+  item: PRODUCT,
+  handleCartMinusClick: () => {
+    console.log('cart minus');
+  },
+  handleCartPlusClick: () => {
+    console.log('cart plus');
+  },
+  handleRemoveFromCart: () => {
+    console.log('cart remove');
+  },
+  toggleFavorite: () => {
+    console.log('favorite');
+  },
 };
 
 export const CART_SIDEBAR_DEFAULT_PROPS: CartSidebarProps = {
-    cartTotal: 100,
-    isUser: true,
-    handleCheckoutClick: async () => {
-        console.log('checkout');
-    },
-    isLoading: false,
+  cartTotal: 100,
+  isUser: true,
+  handleCheckoutClick: async () => {
+    console.log('checkout');
+  },
+  isLoading: false,
 };
 
 export const CATEGORY_CARD_DEFAULT_PROPS: CategoryCardProps = {
-    category: {
-        smallDescription: 'smalll des',
-        image: {
-            data: {
-                attributes: {
-                    url: cat,
-                },
-            },
+  category: {
+    smallDescription: 'smalll des',
+    image: {
+      data: {
+        attributes: {
+          url: cat,
         },
-        slug: '1',
+      },
     },
+    slug: '1',
+  },
 };
 export const ICON_DEFAULT_PROPS: IconProps = {
-    icon: 'cart',
+  icon: 'cart',
 };
 
 export const ITEM_CARD_DEFAULT_PROPS: ItemCardProps = {
-    item: ITEM,
-    size: 'base',
-    handleCartClick: () => console.log('cart clicked'),
-    handleAmountCartClick: () => console.log('amount cart clicked'),
-    handleFavoriteClick: () => console.log('favorite clicked'),
+  item: ITEM,
+  size: 'base',
+  handleCartClick: () => console.log('cart clicked'),
+  handleAmountCartClick: () => console.log('amount cart clicked'),
+  handleFavoriteClick: () => console.log('favorite clicked'),
 };
 export const NAV_BUTTON_DEFAULT_PROPS: NavButtonProps = {
-    type: 'heart',
+  type: 'heart',
 };
 export const PRODUCT_GALLERY_DEFAULT_PROPS: ProductGalleryProps = {
-    images: [
-        {
-            attributes: {
-                url: cat,
-            },
-        },
-        {
-            attributes: {
-                url: cat2,
-            },
-        },
-    ],
+  images: [
+    {
+      attributes: {
+        url: cat,
+      },
+    },
+    {
+      attributes: {
+        url: cat2,
+      },
+    },
+  ],
 };
 
 export const PRODUCT_INFORMATION_DEFAULT_PROPS: ProductInformationProps = {
-    information: [...Array(10).keys()].map((_value, index) => ({
-        title: `Title${index + 1}`,
-        content: `content${index + 1}`,
-    })),
+  information: [...Array(10).keys()].map((_value, index) => ({
+    title: `Title${index + 1}`,
+    content: `content${index + 1}`,
+  })),
 };
 
 export const PRODUCT_SIDEBAR_DEFAULT_PROPS: ProductSidebarProps = {
-    product: PRODUCT,
-    handleCartClick: () => {
-        console.log('cart');
-    },
-    handleRemoveCartClick: () => {
-        console.log('remove cart');
-    },
-    handleFavoriteClick: () => {
-        console.log('favorite');
-    },
-    inCartAmount: 0,
-    isFavorite: true,
+  product: PRODUCT,
+  handleCartClick: () => {
+    console.log('cart');
+  },
+  handleRemoveCartClick: () => {
+    console.log('remove cart');
+  },
+  handleFavoriteClick: () => {
+    console.log('favorite');
+  },
+  inCartAmount: 0,
+  isFavorite: true,
 };
 
 export const SEARCHBAR_ITEM_DEFAULT_PROPS: SearchbarItemProps = {
-    item: {
-        slug: 'cat-cat',
-        name: 'cat cat',
-        images: {
-            data: [
-                {
-                    attributes: {
-                        url: cat,
-                    },
-                },
-                {
-                    attributes: {
-                        url: cat2,
-                    },
-                },
-            ],
+  item: {
+    slug: 'cat-cat',
+    name: 'cat cat',
+    images: {
+      data: [
+        {
+          attributes: {
+            url: cat,
+          },
         },
-        smallDescription: 'smallDescription',
+        {
+          attributes: {
+            url: cat2,
+          },
+        },
+      ],
     },
-    handleClick: () => {
-        console.log('clicked');
-    },
+    smallDescription: 'smallDescription',
+  },
+  handleClick: () => {
+    console.log('clicked');
+  },
 };
 
 export const SELECT_ITEM = {
-    label: 'Label1',
-    value: 'value1',
+  label: 'Label1',
+  value: 'value1',
 };
 
 export const SELECT_DEFAULT_PROPS: Required<
-    Omit<SelectProps, 'placeholder' | 'multiple'>
+  Omit<SelectProps, 'placeholder' | 'multiple'>
 > = {
-    items: [SELECT_ITEM],
-    initial: ['value1'],
-    alignClasses: '',
-    onChange: () => console.log('changed'),
+  items: [SELECT_ITEM],
+  initial: ['value1'],
+  alignClasses: '',
+  onChange: () => console.log('changed'),
 };

@@ -7,15 +7,15 @@ import { wrapper } from '@/store';
 import '@/styles/global.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
-    return (
-        <>
-            <ErrorBoundary>
-                <main className="app">
-                    <Component {...pageProps} />
-                </main>
-            </ErrorBoundary>
-        </>
-    );
+  return (
+    <>
+      <ErrorBoundary>
+        <main className="app">
+          <Component {...pageProps} />
+        </main>
+      </ErrorBoundary>
+    </>
+  );
 }
 
 export default wrapper.withRedux(CustomApp);

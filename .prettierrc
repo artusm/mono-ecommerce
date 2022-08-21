@@ -1,17 +1,17 @@
 {
-    "printWidth": 80,
-    "tabWidth": 4,
-    "singleQuote": true,
-    "trailingComma": "all",
-    "semi": true,
-    "importOrder": [
-        "^react$",
-        "^clsx|next\\/(.*)|feather-icons-react|lodash.debounce|react-markdown|react-redux|nextjs-progressbar|@apollo\\/(.*)|isomorphic-unfetch|querystring|next-redux-wrapper|redux-persist(.*)$",
-        "^@ecommerce/shared/(.*)$",
-        "^@/(.*)$",
-        "^[./LocalComponents]",
-        "^[./]"
-    ],
-    "importOrderSeparation": true,
-    "importOrderSortSpecifiers": true
+  "printWidth": 80,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "semi": true,
+  "importOrder": [
+    "^react$",
+    "^clsx|next\\/(.*)|feather-icons-react|lodash.debounce|react-markdown|react-redux|nextjs-progressbar|@apollo\\/(.*)|isomorphic-unfetch|querystring|next-redux-wrapper|redux-persist(.*)$",
+    "^@ecommerce/shared/(.*)$",
+    "^@/(.*)$",
+    "^[./LocalComponents]",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }

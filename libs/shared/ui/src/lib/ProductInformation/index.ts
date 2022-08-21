@@ -1,6 +1,6 @@
 import {
-    ProductInformation,
-    ProductInformationProps,
+  ProductInformation,
+  ProductInformationProps,
 } from './ProductInformation';
 
 export { ProductInformation };

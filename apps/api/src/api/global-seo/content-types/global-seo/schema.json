@@ -1,60 +1,60 @@
 {
-    "kind": "singleType",
-    "collectionName": "global_seos",
-    "info": {
-        "singularName": "global-seo",
-        "pluralName": "global-seos",
-        "displayName": "GlobalSeo",
-        "description": ""
-    },
-    "options": {
-        "draftAndPublish": false
-    },
-    "pluginOptions": {
-        "i18n": {
-            "localized": true
-        }
-    },
-    "attributes": {
-        "metaTitle": {
-            "pluginOptions": {
-                "i18n": {
-                    "localized": true
-                }
-            },
-            "type": "string",
-            "required": true
-        },
-        "metaDescription": {
-            "pluginOptions": {
-                "i18n": {
-                    "localized": true
-                }
-            },
-            "type": "text",
-            "required": true
-        },
-        "metaImage": {
-            "type": "media",
-            "multiple": false,
-            "required": true,
-            "allowedTypes": ["images"],
-            "pluginOptions": {
-                "i18n": {
-                    "localized": false
-                }
-            }
-        },
-        "meta": {
-            "type": "component",
-            "repeatable": true,
-            "pluginOptions": {
-                "i18n": {
-                    "localized": true
-                }
-            },
-            "component": "page.meta",
-            "required": false
-        }
+  "kind": "singleType",
+  "collectionName": "global_seos",
+  "info": {
+    "singularName": "global-seo",
+    "pluralName": "global-seos",
+    "displayName": "GlobalSeo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
     }
+  },
+  "attributes": {
+    "metaTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "metaDescription": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "required": true
+    },
+    "metaImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "page.meta",
+      "required": false
+    }
+  }
 }

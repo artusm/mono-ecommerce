@@ -4,22 +4,22 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { AppState } from '@/store';
 import {
-    isFavoriteSelector,
-    toggleFavorite,
+  isFavoriteSelector,
+  toggleFavorite,
 } from '@/store/slices/favorite-items';
 
 export const useFavorite = (slug: string) => {
-    const dispatch = useDispatch();
-    const isFavorite = useSelector((state: AppState) =>
-        isFavoriteSelector(state.favoriteItems, slug),
-    );
+  const dispatch = useDispatch();
+  const isFavorite = useSelector((state: AppState) =>
+    isFavoriteSelector(state.favoriteItems, slug),
+  );
 
-    const toggle = useCallback(() => {
-        dispatch(toggleFavorite(slug));
-    }, [slug]);
+  const toggle = useCallback(() => {
+    dispatch(toggleFavorite(slug));
+  }, [slug]);
 
-    return {
-        isFavorite,
-        toggleFavorite: toggle,
-    };
+  return {
+    isFavorite,
+    toggleFavorite: toggle,
+  };
 };

@@ -8,26 +8,26 @@ import { CART_SIDEBAR_DEFAULT_PROPS } from '../../props/constants';
 import { CartSidebar } from './CartSidebar';
 
 describe('CartSidebar', () => {
-    let renderResult: RenderResult;
+  let renderResult: RenderResult;
 
-    beforeEach(() => {
-        renderResult = render(<CartSidebar {...CART_SIDEBAR_DEFAULT_PROPS} />);
-    });
+  beforeEach(() => {
+    renderResult = render(<CartSidebar {...CART_SIDEBAR_DEFAULT_PROPS} />);
+  });
 
-    it('should render successfully', () => {
-        const { baseElement } = renderResult;
+  it('should render successfully', () => {
+    const { baseElement } = renderResult;
 
-        const tree = create(
-            <CartSidebar {...CART_SIDEBAR_DEFAULT_PROPS} />,
-        ).toJSON();
-        expect(tree).toMatchSnapshot();
+    const tree = create(
+      <CartSidebar {...CART_SIDEBAR_DEFAULT_PROPS} />,
+    ).toJSON();
+    expect(tree).toMatchSnapshot();
 
-        expect(baseElement).toBeTruthy();
-    });
+    expect(baseElement).toBeTruthy();
+  });
 
-    it('should have proper price', () => {
-        const { cartTotal } = CART_SIDEBAR_DEFAULT_PROPS;
+  it('should have proper price', () => {
+    const { cartTotal } = CART_SIDEBAR_DEFAULT_PROPS;
 
-        expect(screen.getByText(formatPrice(cartTotal))).toBeInTheDocument();
-    });
+    expect(screen.getByText(formatPrice(cartTotal))).toBeInTheDocument();
+  });
 });

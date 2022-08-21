@@ -1,18 +1,18 @@
 {
-    "collectionName": "components_page_metas",
-    "info": {
-        "displayName": "meta",
-        "icon": "ad"
+  "collectionName": "components_page_metas",
+  "info": {
+    "displayName": "meta",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
     },
-    "options": {},
-    "attributes": {
-        "name": {
-            "type": "string",
-            "required": true
-        },
-        "content": {
-            "type": "string",
-            "required": true
-        }
+    "content": {
+      "type": "string",
+      "required": true
     }
+  }
 }

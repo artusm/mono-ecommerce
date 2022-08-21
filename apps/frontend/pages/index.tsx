@@ -11,22 +11,22 @@ import { GlobalSeo } from '@/types/GlobalSeo';
 import styles from './index.module.scss';
 
 interface Props {
-    globalSeo: GlobalSeo;
+  globalSeo: GlobalSeo;
 }
 
 export const Index: React.FC<Props> = (props) => {
-    const { data: homeData } = useHomePageQuery();
+  const { data: homeData } = useHomePageQuery();
 
-    return (
-        <Layout defaultSeo={props.globalSeo}>
-            <div className={styles.page}>
-                <Home
-                    products={homeData?.homePage.data.attributes.products}
-                    categories={homeData?.homePage.data.attributes.categories}
-                />
-            </div>
-        </Layout>
-    );
+  return (
+    <Layout defaultSeo={props.globalSeo}>
+      <div className={styles.page}>
+        <Home
+          products={homeData?.homePage.data.attributes.products}
+          categories={homeData?.homePage.data.attributes.categories}
+        />
+      </div>
+    </Layout>
+  );
 };
 
 export default withApollo()(withGlobalSeo(Index));

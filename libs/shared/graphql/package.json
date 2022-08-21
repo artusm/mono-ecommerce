@@ -1,5 +1,5 @@
 {
-    "name": "@ecommerce/shared/graphql",
-    "version": "0.0.1",
-    "type": "commonjs"
+  "name": "@ecommerce/shared/graphql",
+  "version": "0.0.1",
+  "type": "commonjs"
 }

@@ -6,27 +6,27 @@ import { ICON_DEFAULT_PROPS } from '../../props/constants';
 import { Icon } from './Icon';
 
 describe('Icon', () => {
-    let renderResult: RenderResult;
-    const props = ICON_DEFAULT_PROPS;
+  let renderResult: RenderResult;
+  const props = ICON_DEFAULT_PROPS;
 
-    beforeEach(() => {
-        renderResult = render(<Icon {...props} />);
-    });
+  beforeEach(() => {
+    renderResult = render(<Icon {...props} />);
+  });
 
-    it('should render successfully', () => {
-        const { baseElement } = renderResult;
+  it('should render successfully', () => {
+    const { baseElement } = renderResult;
 
-        const tree = create(<Icon {...props} />).toJSON();
-        expect(tree).toMatchSnapshot();
+    const tree = create(<Icon {...props} />).toJSON();
+    expect(tree).toMatchSnapshot();
 
-        expect(baseElement).toBeTruthy();
-    });
+    expect(baseElement).toBeTruthy();
+  });
 
-    it('when loading show spinner instead of icon', () => {
-        expect(screen.queryByTestId('spinner')).not.toBeInTheDocument();
+  it('when loading show spinner instead of icon', () => {
+    expect(screen.queryByTestId('spinner')).not.toBeInTheDocument();
 
-        renderResult.rerender(<Icon {...props} loading={true} />);
+    renderResult.rerender(<Icon {...props} loading={true} />);
 
-        expect(screen.queryByTestId('spinner')).toBeInTheDocument();
-    });
+    expect(screen.queryByTestId('spinner')).toBeInTheDocument();
+  });
 });

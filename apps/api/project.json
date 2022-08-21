@@ -1,64 +1,64 @@
 {
-    "root": "apps/api",
-    "projectType": "application",
-    "sourceRoot": "apps/api/src",
-    "targets": {
-        "install": {
-            "executor": "@nrwl/workspace:run-commands",
-            "options": {
-                "commands": [
-                    {
-                        "command": "cd apps/api && npm ci --force"
-                    }
-                ]
-            }
-        },
-        "develop": {
-            "executor": "@nrwl/workspace:run-commands",
-            "options": {
-                "commands": [
-                    {
-                        "command": "cd apps/api && npm run develop"
-                    }
-                ]
-            },
-            "defaultConfiguration": "development",
-            "configurations": {
-                "development": {
-                    "envFile": ".env.development"
-                }
-            }
-        },
-        "start": {
-            "executor": "@nrwl/workspace:run-commands",
-            "options": {
-                "commands": [
-                    {
-                        "command": "cd apps/api && npm run start"
-                    }
-                ]
-            }
-        },
-        "build": {
-            "executor": "@nrwl/workspace:run-commands",
-            "options": {
-                "commands": [
-                    {
-                        "command": "cd apps/api && npm ci --force && npm run build"
-                    }
-                ]
-            }
-        },
-        "build-naked": {
-            "executor": "@nrwl/workspace:run-commands",
-            "options": {
-                "commands": [
-                    {
-                        "command": "cd apps/api && npm run build"
-                    }
-                ]
-            }
-        }
+  "root": "apps/api",
+  "projectType": "application",
+  "sourceRoot": "apps/api/src",
+  "targets": {
+    "install": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "cd apps/api && npm ci --force"
+          }
+        ]
+      }
     },
-    "tags": []
+    "develop": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "cd apps/api && npm run develop"
+          }
+        ]
+      },
+      "defaultConfiguration": "development",
+      "configurations": {
+        "development": {
+          "envFile": ".env.development"
+        }
+      }
+    },
+    "start": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "cd apps/api && npm run start"
+          }
+        ]
+      }
+    },
+    "build": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "cd apps/api && npm ci --force && npm run build"
+          }
+        ]
+      }
+    },
+    "build-naked": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "cd apps/api && npm run build"
+          }
+        ]
+      }
+    }
+  },
+  "tags": []
 }

@@ -1,20 +1,20 @@
 query ProductCart($value: [String]) {
-    products(filters: { slug: { in: $value } }, pagination: { limit: 50 }) {
-        data {
-            id
+  products(filters: { slug: { in: $value } }, pagination: { limit: 50 }) {
+    data {
+      id
+      attributes {
+        price
+        slug
+        smallDescription
+        name
+        images {
+          data {
             attributes {
-                price
-                slug
-                smallDescription
-                name
-                images {
-                    data {
-                        attributes {
-                            url
-                        }
-                    }
-                }
+              url
             }
+          }
         }
+      }
     }
+  }
 }
