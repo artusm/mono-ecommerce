@@ -13,3 +13,4 @@ apps/api/node_modules
 apps/api/.strapi-updater.json
 apps/api/build/
 apps/frontend/.next
+libs/shared/ui/src/feather-icons-react.d.ts
