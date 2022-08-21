@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select should render successfully 1`] = `
+<div
+  className="rotate relative"
+>
+  <button
+    className="py-2.5 px-4 flex items-end gap-2 bg-gray-100 text-sm font-medium rounded-full border sm:(px-6) border-black"
+    onClick={[Function]}
+    type="button"
+  >
+    Select
+    <div
+      aria-hidden="true"
+      className="h-4.5 w-4.5 relative transition-transform transform-gpu"
+    >
+      <div
+        aria-hidden="true"
+        className="relative flex items-center select-none pointer-events-none h-5 w-5"
+      >
+        <svg
+          className="feather feather-chevron-down "
+          fill="none"
+          height={24}
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+          width={24}
+        >
+          <g
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<polyline points=\\"6 9 12 15 18 9\\"></polyline>",
+              }
+            }
+          />
+        </svg>
+      </div>
+    </div>
+  </button>
+</div>
+`;

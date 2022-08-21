@@ -21,6 +21,7 @@ export const ICONS = {
   heart: 'heart',
   search: 'search',
   x: 'x',
+  'chevron-down': 'chevron-down',
 } as const;
 
 const SIZES = ['sm', 'base', 'lg'] as const;

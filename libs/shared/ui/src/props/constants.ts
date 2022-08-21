@@ -7,11 +7,13 @@ import {ItemCardProps} from "@ecommerce/shared/ui/ItemCard";
 import {NavButtonProps} from "@ecommerce/shared/ui/NavButton";
 import {ProductGalleryProps} from "@ecommerce/shared/ui/ProductGallery";
 import {ProductSidebarProps} from "@ecommerce/shared/ui/ProductSidebar";
+import {ProductInformationProps} from "@ecommerce/shared/ui/ProductInformation";
+import {SearchbarItemProps} from "@ecommerce/shared/ui/SearchbarItem";
+import {SelectProps} from "@ecommerce/shared/ui/Select";
 
 import cat from './cat.jpg';
 import cat2 from './cat2.jpeg';
-import {ProductInformationProps} from "@ecommerce/shared/ui/ProductInformation";
-import {SearchbarItemProps} from "@ecommerce/shared/ui/SearchbarItem";
+
 
 export const PRODUCT: ProductSidebarProps['product'] = {
   slug: 'some-name',
@@ -185,4 +187,18 @@ export const SEARCHBAR_ITEM_DEFAULT_PROPS: SearchbarItemProps = {
   handleClick: () => {
     console.log('clicked')
   },
+};
+
+export const SELECT_ITEM = {
+  label: 'Label1',
+  value: 'value1',
+};
+
+export const SELECT_DEFAULT_PROPS: Required<
+  Omit<SelectProps, 'placeholder' | 'multiple'>
+  > = {
+  items: [SELECT_ITEM],
+  initial: ['value1'],
+  alignClasses: '',
+  onChange: () => console.log('changed'),
 };
