@@ -1,5 +1,8 @@
+import React from 'react';
+
 import clsx from 'clsx';
-import { Button } from '@ecommerce/shared/ui/button';
+
+import { Button } from '@ecommerce/shared/ui/Button';
 
 interface Props {
   handleCartClick: () => void;
@@ -30,7 +33,7 @@ export const Cart: React.FC<Props> = (props) => {
             'text-white text-sm select-none',
             'active:(bg-red-500)',
             'focus:(bg-red-500)',
-            'hover:(bg-red-500)'
+            'hover:(bg-red-500)',
           )}
           basic
           tag="button"

@@ -1,14 +1,17 @@
-import { useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
+
 import clsx from 'clsx';
+import Link from 'next/link';
+
+import type { Product } from '@ecommerce/shared/graphql/refactored-types';
 import { handleBlur } from '@ecommerce/shared/utils/handle-blur';
 import { createItemHref } from '@ecommerce/shared/utils/url';
-import type { Product } from '@ecommerce/shared/graphql/refactored-types';
-import Link from 'next/link';
-import { CoverImage } from './LocalComponents/CoverImage';
-import { Information } from './LocalComponents/Information';
-import { Cart } from './LocalComponents/Cart';
+
 import { Amount } from './LocalComponents/Amount';
+import { Cart } from './LocalComponents/Cart';
+import { CoverImage } from './LocalComponents/CoverImage';
 import { Favorite } from './LocalComponents/Favorite';
+import { Information } from './LocalComponents/Information';
 
 export interface ItemCardProps {
   item: Product;
@@ -57,7 +60,7 @@ export const ItemCard: React.FC<ItemCardProps> = (props) => {
         'list-none',
         size === 'base' && 'w-60',
         size === 'lg' && 'w-72',
-        size === 'parent' && 'w-full h-full'
+        size === 'parent' && 'w-full h-full',
       )}
       {...elementProps}
       onMouseOver={() => setFocusHover((prev) => ({ ...prev, hover: true }))}
@@ -65,7 +68,11 @@ export const ItemCard: React.FC<ItemCardProps> = (props) => {
       onFocus={() => setFocusHover((prev) => ({ ...prev, focus: true }))}
       onBlur={(e) => {
         handleBlur(e)(
-          () => void setFocusHover((prev) => ({ ...prev, focus: false }))
+          () =>
+            void setFocusHover((prev) => ({
+              ...prev,
+              focus: false,
+            })),
         );
       }}
       data-testid="item-card"
@@ -78,7 +85,7 @@ export const ItemCard: React.FC<ItemCardProps> = (props) => {
               'object-cover bg-gray-100',
               size === 'parent' && 'aspect-square',
               size === 'base' && 'h-72',
-              size === 'lg' && 'h-80'
+              size === 'lg' && 'h-80',
             )}
           >
             <CoverImage product={item} hovered={hovered} />

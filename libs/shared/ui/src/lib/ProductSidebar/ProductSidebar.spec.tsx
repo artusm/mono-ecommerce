@@ -1,17 +1,18 @@
-import { render, RenderResult, screen } from '@testing-library/react';
-import { create } from 'react-test-renderer';
 import '@testing-library/jest-dom';
+import { RenderResult, render, screen } from '@testing-library/react';
+import { create } from 'react-test-renderer';
 
-import { ProductSidebar } from './ProductSidebar';
-import { PRODUCT_SIDEBAR_DEFAULT_PROPS } from '../../props/constants';
 import { formatPrice } from '@ecommerce/shared/utils/format-price';
+
+import { PRODUCT_SIDEBAR_DEFAULT_PROPS } from '../../props/constants';
+import { ProductSidebar } from './ProductSidebar';
 
 describe('ProductSidebar', () => {
   let renderResult: RenderResult;
 
   beforeEach(() => {
     renderResult = render(
-      <ProductSidebar {...PRODUCT_SIDEBAR_DEFAULT_PROPS} />
+      <ProductSidebar {...PRODUCT_SIDEBAR_DEFAULT_PROPS} />,
     );
   });
 
@@ -19,7 +20,7 @@ describe('ProductSidebar', () => {
     const { baseElement } = renderResult;
 
     const tree = create(
-      <ProductSidebar {...PRODUCT_SIDEBAR_DEFAULT_PROPS} />
+      <ProductSidebar {...PRODUCT_SIDEBAR_DEFAULT_PROPS} />,
     ).toJSON();
     expect(tree).toMatchSnapshot();
 

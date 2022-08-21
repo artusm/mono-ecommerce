@@ -1,5 +1,7 @@
 import React from 'react';
+
 import clsx from 'clsx';
+
 import { NavButton } from '@ecommerce/shared/ui/NavButton';
 
 interface Props {
@@ -16,7 +18,7 @@ const Icon: React.FC<Props> = ({ cartItemsQuantity }) => {
             'flex items-center justify-center',
             'bg-sky-600',
             'rounded-full',
-            'text-xs text-white'
+            'text-xs text-white',
           )}
           aria-hidden="true"
         >

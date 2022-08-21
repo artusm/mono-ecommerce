@@ -1,5 +1,6 @@
-import clsx from 'clsx';
 import React, { ErrorInfo, ReactNode } from 'react';
+
+import clsx from 'clsx';
 
 interface Props {
   children: ReactNode;
@@ -28,7 +29,7 @@ export class ErrorBoundary extends React.Component<Props, State> {
         <section
           className={clsx(
             'm-auto w-max py-12',
-            'flex flex-col gap-6 items-center'
+            'flex flex-col gap-6 items-center',
           )}
         >
           <h1 className="font-semibold text-3xl">Oops, there is an error!</h1>
@@ -37,7 +38,7 @@ export class ErrorBoundary extends React.Component<Props, State> {
               'p-4',
               'border border-black rounded-full',
               'transition-colors',
-              'hover:(bg-black text-white)'
+              'hover:(bg-black text-white)',
             )}
             type="button"
             onClick={() => this.setState({ hasError: false })}

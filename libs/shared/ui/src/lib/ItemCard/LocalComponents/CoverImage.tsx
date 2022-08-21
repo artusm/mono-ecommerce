@@ -1,7 +1,10 @@
-import type { Product } from '@ecommerce/shared/graphql/refactored-types';
-import { getImageURL } from '@ecommerce/shared/utils/url';
+import React from 'react';
+
 import clsx from 'clsx';
 import Image from 'next/image';
+
+import type { Product } from '@ecommerce/shared/graphql/refactored-types';
+import { getImageURL } from '@ecommerce/shared/utils/url';
 
 interface Props {
   product: Product;
@@ -26,7 +29,7 @@ export const CoverImage: React.FC<Props> = (props) => {
           className={clsx(
             'absolute left-0 top-0 h-full w-full',
             'transition-opacity',
-            hovered ? 'opacity-100' : 'opacity-0'
+            hovered ? 'opacity-100' : 'opacity-0',
           )}
           aria-hidden="true"
           data-testid="second-image"

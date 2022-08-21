@@ -1,10 +1,12 @@
+import React from 'react';
+
 import {
   CategoriesSearchQuery,
   ProductSearchQuery,
 } from '@ecommerce/shared/graphql/types';
+
 import { Filters } from './LocalComponents/Filters';
 import { Products } from './LocalComponents/Products';
-import React from 'react';
 
 interface Props {
   products: NonNullable<ProductSearchQuery['products']>['data'];

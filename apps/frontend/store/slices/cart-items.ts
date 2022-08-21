@@ -1,4 +1,5 @@
-import { createSelector, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { PayloadAction, createSelector, createSlice } from '@reduxjs/toolkit';
+
 import { MAXIMUM_IN_CART } from '@/lib/constants';
 
 export interface CardItemsState {
@@ -41,17 +42,17 @@ export const cardItemsSlice = createSlice({
 
 export const getInCartAmount = createSelector(
   [(state: CardItemsState) => state.items, (_, slug: string): string => slug],
-  (items, slug) => items[slug] || 0
+  (items, slug) => items[slug] || 0,
 );
 
 export const getCartItemsQuantity = createSelector(
   (state: CardItemsState) => state.items,
-  (items) => Object.values(items).reduce((prev, curr) => prev + curr, 0)
+  (items) => Object.values(items).reduce((prev, curr) => prev + curr, 0),
 );
 
 export const getCartUniqueItemsQuantity = createSelector(
   (state: CardItemsState) => state.items,
-  (items) => Object.values(items).filter((amount) => amount > 0).length
+  (items) => Object.values(items).filter((amount) => amount > 0).length,
 );
 
 export const { addCart } = cardItemsSlice.actions;

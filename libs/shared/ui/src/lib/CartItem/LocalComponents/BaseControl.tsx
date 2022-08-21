@@ -1,3 +1,5 @@
+import React from 'react';
+
 import clsx from 'clsx';
 
 interface Props {
@@ -17,7 +19,7 @@ export const BaseControl: React.FC<Props> = (props) => {
         'xs:(flex)',
         'sm:(text-base)',
         'md:(text-xs gap-4)',
-        'lg:(text-base gap-8)'
+        'lg:(text-base gap-8)',
       )}
     >
       <button

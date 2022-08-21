@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+
 import clsx from 'clsx';
-import dynamic from 'next/dynamic';
-import type { Props as ContentProps } from './content';
 import FeatherIcon from 'feather-icons-react';
+import dynamic from 'next/dynamic';
+
+import type { Props as ContentProps } from './Content';
 
 interface Props {
   data: {
@@ -12,7 +14,7 @@ interface Props {
 }
 
 const LazyContent = dynamic<ContentProps>(() =>
-  import('./content').then(({ Content }) => Content)
+  import('./Content').then(({ Content }) => Content),
 );
 
 export const Item: React.FC<Props> = (props) => {
@@ -27,7 +29,7 @@ export const Item: React.FC<Props> = (props) => {
           'flex justify-between items-center',
           'text-3xl  font-semibold',
           'cursor-pointer',
-          'hover:(underline)'
+          'hover:(underline)',
         )}
         type="button"
         onClick={() => setOpen((prev) => !prev)}
@@ -37,7 +39,7 @@ export const Item: React.FC<Props> = (props) => {
           className={clsx(
             'h-8 w-8 relative',
             'transition-transform transform',
-            open && 'rotate-90'
+            open && 'rotate-90',
           )}
           aria-hidden="true"
         >

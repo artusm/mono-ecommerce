@@ -1,6 +1,6 @@
+import '@testing-library/jest-dom';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { create } from 'react-test-renderer';
-import '@testing-library/jest-dom';
 
 import { Searchbar, SearchbarProps } from './Searchbar';
 
@@ -32,7 +32,7 @@ describe('Searchbar', () => {
         handleClear={handleClear}
         handleSubmit={handleSubmit}
         loading={false}
-      />
+      />,
     );
 
     element = renderResult.baseElement;
@@ -47,7 +47,7 @@ describe('Searchbar', () => {
         handleClear={handleClear}
         handleSubmit={handleSubmit}
         loading={false}
-      />
+      />,
     ).toJSON();
     expect(tree).toMatchSnapshot();
 
@@ -82,7 +82,7 @@ describe('Searchbar', () => {
         handleClear={handleClear}
         handleSubmit={handleSubmit}
         loading={false}
-      />
+      />,
     );
 
     expect(controlsElement).not.toHaveClass('pointer-events-none');

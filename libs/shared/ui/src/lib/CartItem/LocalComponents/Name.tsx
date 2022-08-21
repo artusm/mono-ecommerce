@@ -1,3 +1,5 @@
+import React from 'react';
+
 import clsx from 'clsx';
 import Link from 'next/link';
 
@@ -14,7 +16,7 @@ export const Name: React.FC<Props> = (props) => {
       <a
         className={clsx(
           'text-base font-semibold uppercase',
-          'hover:(underline)'
+          'hover:(underline)',
         )}
       >
         {name}

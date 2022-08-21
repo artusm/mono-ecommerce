@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+
 import clsx from 'clsx';
-import { handleBlur } from '@ecommerce/shared/utils/handle-blur';
+import FeatherIcon from 'feather-icons-react';
+
 import type { SearchbarSearchQuery } from '@ecommerce/shared/graphql/types';
+import { handleBlur } from '@ecommerce/shared/utils/handle-blur';
+
 import { Control } from './LocalComponents/Control';
 import { List } from './LocalComponents/List';
-import FeatherIcon from 'feather-icons-react';
 
 export type Items = NonNullable<SearchbarSearchQuery['products']>['data'];
 
@@ -32,7 +35,7 @@ export const Searchbar: React.FC<SearchbarProps> = (props: SearchbarProps) => {
           'bg-gray-100',
           'rounded-3xl',
           'transition-colors',
-          !focus && 'hover:(bg-gray-200)'
+          !focus && 'hover:(bg-gray-200)',
         )}
         role="search"
         onSubmit={(e) => {
@@ -49,7 +52,7 @@ export const Searchbar: React.FC<SearchbarProps> = (props: SearchbarProps) => {
             'h-4 w-4 absolute left-4',
             'flex items-center',
             'transition-all',
-            input ? 'opacity-0 scale-0' : 'w-4 mr-4'
+            input ? 'opacity-0 scale-0' : 'w-4 mr-4',
           )}
           aria-hidden="true"
         >
@@ -60,7 +63,7 @@ export const Searchbar: React.FC<SearchbarProps> = (props: SearchbarProps) => {
             'py-3 w-full',
             'transition-all',
             'bg-transparent outline-none',
-            input ? 'pl-6 pr-10' : 'px-10'
+            input ? 'pl-6 pr-10' : 'px-10',
           )}
           title="search"
           role="searchbox"
@@ -76,7 +79,7 @@ export const Searchbar: React.FC<SearchbarProps> = (props: SearchbarProps) => {
         <div
           className={clsx(
             'h-full w-full top-0 left-0 -z-2 fixed',
-            'bg-gray-300 opacity-40'
+            'bg-gray-300 opacity-40',
           )}
           aria-hidden="true"
         />

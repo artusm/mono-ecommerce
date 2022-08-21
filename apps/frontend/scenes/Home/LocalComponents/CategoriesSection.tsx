@@ -1,10 +1,13 @@
+import React from 'react';
+
+import clsx from 'clsx';
+
 import {
   CategoryCard,
   type CategoryCardProps,
 } from '@ecommerce/shared/ui/CategoryCard';
-import clsx from 'clsx';
+
 import type { GetHomePageData } from '../Home';
-import React from 'react';
 
 interface Props {
   categories: GetHomePageData<'categories'>;
@@ -21,7 +24,7 @@ export const CategoriesSection: React.FC<Props> = (props) => {
       <ul
         className={clsx(
           'flex flex-wrap gap-4',
-          categories?.data.length > 2 && 'justify-between'
+          categories?.data.length > 2 && 'justify-between',
         )}
       >
         {categories?.data.map(
@@ -31,7 +34,7 @@ export const CategoriesSection: React.FC<Props> = (props) => {
                 className={clsx(
                   'w-full',
                   'sm:(w-[calc(50%-0.5rem)])',
-                  'lg:(w-[calc(33.3%-1rem)])'
+                  'lg:(w-[calc(33.3%-1rem)])',
                 )}
                 key={category.id}
               >
@@ -40,7 +43,7 @@ export const CategoriesSection: React.FC<Props> = (props) => {
                   color={COLORS[index % COLORS.length]}
                 />
               </li>
-            )
+            ),
         )}
       </ul>
     </section>

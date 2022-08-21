@@ -1,7 +1,9 @@
+import React from 'react';
+
 import { ItemCard, ItemCardProps } from '@ecommerce/shared/ui/ItemCard';
-import { useFavorite } from '@/hooks/useFavorite';
+
 import { useCartItem } from '@/hooks/useCartItem';
-import React from "react";
+import { useFavorite } from '@/hooks/useFavorite';
 
 type Props = Omit<
   ItemCardProps,

@@ -1,4 +1,7 @@
+import React from 'react';
+
 import type { ComponentProductInformationSection } from '@ecommerce/shared/graphql/types';
+
 import { Item } from './LocalComponents/Item';
 
 export interface ProductInformationProps {
@@ -6,7 +9,7 @@ export interface ProductInformationProps {
 }
 
 export const ProductInformation: React.FC<ProductInformationProps> = (
-  props
+  props,
 ) => {
   const { information } = props;
 
@@ -14,7 +17,7 @@ export const ProductInformation: React.FC<ProductInformationProps> = (
     <ul>
       {information.map(
         (information) =>
-          information && <Item key={information.title} data={information} />
+          information && <Item key={information.title} data={information} />,
       )}
     </ul>
   );

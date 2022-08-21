@@ -1,16 +1,17 @@
-import React from 'react';
+import '@testing-library/jest-dom';
 import {
+  RenderResult,
   fireEvent,
   render,
-  RenderResult,
   screen,
   waitFor,
 } from '@testing-library/react';
 import { create } from 'react-test-renderer';
-import '@testing-library/jest-dom';
 
-import { ProductInformation } from './ProductInformation';
+import React from 'react';
+
 import { PRODUCT_INFORMATION_DEFAULT_PROPS } from '../../props/constants';
+import { ProductInformation } from './ProductInformation';
 
 jest.mock('react-markdown', () => (props: { children: React.ReactNode }) => {
   const ComponentToMock: React.FC<{ children: React.ReactNode }> = (props) => (
@@ -26,7 +27,7 @@ describe('ProductInformation', () => {
 
   beforeEach(() => {
     renderResult = render(
-      <ProductInformation {...PRODUCT_INFORMATION_DEFAULT_PROPS} />
+      <ProductInformation {...PRODUCT_INFORMATION_DEFAULT_PROPS} />,
     );
   });
 
@@ -34,7 +35,7 @@ describe('ProductInformation', () => {
     const { baseElement } = renderResult;
 
     const tree = create(
-      <ProductInformation {...PRODUCT_INFORMATION_DEFAULT_PROPS} />
+      <ProductInformation {...PRODUCT_INFORMATION_DEFAULT_PROPS} />,
     ).toJSON();
     expect(tree).toMatchSnapshot();
 
@@ -45,7 +46,7 @@ describe('ProductInformation', () => {
     const listItems = screen.getAllByRole('listitem');
 
     expect(listItems.length).toBe(
-      PRODUCT_INFORMATION_DEFAULT_PROPS.information.length
+      PRODUCT_INFORMATION_DEFAULT_PROPS.information.length,
     );
   });
 
@@ -60,7 +61,7 @@ describe('ProductInformation', () => {
     fireEvent.click(specificItemButton);
 
     await waitFor(() =>
-      expect(screen.queryByText(content)).toBeInTheDocument()
+      expect(screen.queryByText(content)).toBeInTheDocument(),
     );
   });
 });

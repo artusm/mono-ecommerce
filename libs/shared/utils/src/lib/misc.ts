@@ -7,7 +7,7 @@ export const on = <T extends Window | Document | HTMLElement | EventTarget>(
   ...args: Parameters<T['addEventListener']> | [string, Function | null, ...any]
 ): void => {
   obj?.addEventListener(
-    ...(args as Parameters<HTMLElement['addEventListener']>)
+    ...(args as Parameters<HTMLElement['addEventListener']>),
   );
 };
 
@@ -18,6 +18,6 @@ export const off = <T extends Window | Document | HTMLElement | EventTarget>(
     | [string, Function | null, ...any]
 ): void => {
   obj?.removeEventListener(
-    ...(args as Parameters<HTMLElement['removeEventListener']>)
+    ...(args as Parameters<HTMLElement['removeEventListener']>),
   );
 };

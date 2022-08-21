@@ -6,13 +6,13 @@ import { IconProps } from '@ecommerce/shared/ui/Icon';
 import { ItemCardProps } from '@ecommerce/shared/ui/ItemCard';
 import { NavButtonProps } from '@ecommerce/shared/ui/NavButton';
 import { ProductGalleryProps } from '@ecommerce/shared/ui/ProductGallery';
-import { ProductSidebarProps } from '@ecommerce/shared/ui/ProductSidebar';
 import { ProductInformationProps } from '@ecommerce/shared/ui/ProductInformation';
+import { ProductSidebarProps } from '@ecommerce/shared/ui/ProductSidebar';
 import { SearchbarItemProps } from '@ecommerce/shared/ui/SearchbarItem';
 import { SelectProps } from '@ecommerce/shared/ui/Select';
 
-import cat from './cat.jpg';
 import cat2 from './cat2.jpeg';
+import cat from './cat.jpg';
 
 export const PRODUCT: ProductSidebarProps['product'] = {
   slug: 'some-name',

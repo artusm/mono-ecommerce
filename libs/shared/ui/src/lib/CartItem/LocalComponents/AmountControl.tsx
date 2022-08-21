@@ -1,3 +1,5 @@
+import React from 'react';
+
 import clsx from 'clsx';
 import FeatherIcon from 'feather-icons-react';
 
@@ -18,7 +20,7 @@ export const AmountControl: React.FC<Props> = (props) => {
           'flex items-center justify-center',
           'border rounded-l-xl',
           'transition',
-          'hover:(bg-black text-white border-black)'
+          'hover:(bg-black text-white border-black)',
         )}
         onClick={handleCartMinusClick}
         type="button"
@@ -27,7 +29,7 @@ export const AmountControl: React.FC<Props> = (props) => {
         <div
           className={clsx(
             'h-1/2 w-1/2 relative',
-            'group-hover:(filter invert brightness-0)'
+            'group-hover:(filter invert brightness-0)',
           )}
           aria-hidden="true"
         >
@@ -38,7 +40,7 @@ export const AmountControl: React.FC<Props> = (props) => {
         className={clsx(
           'w-8',
           'flex items-center justify-center',
-          'border-t border-b'
+          'border-t border-b',
         )}
       >
         {inCartAmount}
@@ -49,7 +51,7 @@ export const AmountControl: React.FC<Props> = (props) => {
           'flex items-center justify-center',
           'border rounded-r-xl',
           'transition',
-          'hover:(bg-black text-white border-black)'
+          'hover:(bg-black text-white border-black)',
         )}
         onClick={handleCartPlusClick}
         type="button"
@@ -58,7 +60,7 @@ export const AmountControl: React.FC<Props> = (props) => {
         <div
           className={clsx(
             'h-1/2 w-1/2 relative',
-            'group-hover:(filter invert brightness-0)'
+            'group-hover:(filter invert brightness-0)',
           )}
           aria-hidden="true"
         >

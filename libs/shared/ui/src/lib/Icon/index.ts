@@ -1,4 +1,4 @@
-import { Icon, IconProps, ICONS } from './Icon';
+import { ICONS, Icon, IconProps } from './Icon';
 
 export { Icon, ICONS };
 

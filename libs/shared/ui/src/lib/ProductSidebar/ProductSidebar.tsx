@@ -1,6 +1,10 @@
+import React from 'react';
+
+import clsx from 'clsx';
+
 import { ProductSlugQuery } from '@ecommerce/shared/graphql/types';
 import { formatPrice } from '@ecommerce/shared/utils/format-price';
-import clsx from 'clsx';
+
 import { Cart } from './LocalComponents/Cart';
 import { Favorite } from './LocalComponents/Favorite';
 
@@ -32,14 +36,14 @@ export const ProductSidebar: React.FC<ProductSidebarProps> = (props) => {
       className={clsx(
         'h-full min-w-56 w-full',
         'flex flex-col',
-        'md:(order-2 top-12 sticky w-2/5)'
+        'md:(order-2 top-12 sticky w-2/5)',
       )}
     >
       <div className={clsx('mb-2', 'flex items-center justify-between')}>
         <h1
           className={clsx(
             'max-w-3/5',
-            'font-bold text-3xl uppercase break-words'
+            'font-bold text-3xl uppercase break-words',
           )}
         >
           {name}

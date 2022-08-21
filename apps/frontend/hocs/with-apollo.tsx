@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { ApolloProvider } from '@apollo/react-hooks';
+
 import createApolloClient from '@/lib/apollo-client';
 
 // On the client, we store the Apollo Client in the following variable.
@@ -21,7 +23,7 @@ export const initOnContext = (ctx) => {
     if (inAppContext) {
       console.warn(
         'Warning: You have opted-out of Automatic Static Optimization due to `withApollo` in `pages/_app`.\n' +
-          'Read more: https://err.sh/next.js/opt-out-auto-static-optimization\n'
+          'Read more: https://err.sh/next.js/opt-out-auto-static-optimization\n',
       );
     }
   }
@@ -119,7 +121,7 @@ export const withApollo =
         // we can use it in `PageComponent.getInitialProp`.
         const apolloClient = (ctx.apolloClient = initApolloClient(
           null,
-          await getHeaders(ctx)
+          await getHeaders(ctx),
         ));
 
         // Run wrapped getInitialProps methods
@@ -147,7 +149,7 @@ export const withApollo =
                     ...pageProps,
                     apolloClient,
                   }}
-                />
+                />,
               );
             } catch (error) {
               // Prevent Apollo Client GraphQL errors from crashing SSR.

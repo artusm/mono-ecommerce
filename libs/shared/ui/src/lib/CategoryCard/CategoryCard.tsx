@@ -1,11 +1,15 @@
-import Image from 'next/image';
-import { Button } from '../button';
-import { Category } from '@ecommerce/shared/graphql/refactored-types';
-import classes from './CategoryCard.module.css';
+import React from 'react';
+
 import clsx from 'clsx';
-import Link from 'next/link';
-import { getImageURL } from '@ecommerce/shared/utils/url';
 import FeatherIcon from 'feather-icons-react';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import { Button } from '@ecommerce/shared/Button';
+import { Category } from '@ecommerce/shared/graphql/refactored-types';
+import { getImageURL } from '@ecommerce/shared/utils/url';
+
+import classes from './CategoryCard.module.css';
 
 export interface CategoryCardProps {
   category: Category;
@@ -24,14 +28,14 @@ export const CategoryCard: React.FC<CategoryCardProps> = (props) => {
           'h-full',
           'flex flex-col',
           'hover:(underline)',
-          'focus:(underline)'
+          'focus:(underline)',
         )}
       >
         <div
           className={clsx(
             'w-full relative',
             'bg-gray-100',
-            classes['category-card-aspect']
+            classes['category-card-aspect'],
           )}
         >
           {image && image.data && (
@@ -50,13 +54,13 @@ export const CategoryCard: React.FC<CategoryCardProps> = (props) => {
             color === 'blue' && 'bg-blue-400',
             color === 'green' && 'bg-green-400',
             color === 'yellow' && 'bg-yellow-400',
-            'sm:(p-8 gap-8)'
+            'sm:(p-8 gap-8)',
           )}
         >
           <h3
             className={clsx(
               'font-bold text-xl leading-relaxed',
-              'sm:(text-2xl)'
+              'sm:(text-2xl)',
             )}
           >
             {smallDescription}

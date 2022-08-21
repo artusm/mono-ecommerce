@@ -1,7 +1,11 @@
-import dynamic from 'next/dynamic';
+import React from 'react';
+
 import clsx from 'clsx';
-import type { Items } from '../searchbar';
-import type { Props as ItemsProps } from './items';
+import dynamic from 'next/dynamic';
+
+import type { Items } from '@ecommerce/shared/ui/Searchbar';
+
+import type { Props as ItemsProps } from './Items';
 
 interface Props {
   items: Items;
@@ -9,7 +13,7 @@ interface Props {
 }
 
 const LazyItems = dynamic<ItemsProps>(() =>
-  import('./items').then(({ Items }) => Items)
+  import('./Items').then(({ Items }) => Items),
 );
 
 export const List: React.FC<Props> = (props) => {
@@ -20,7 +24,7 @@ export const List: React.FC<Props> = (props) => {
       className={clsx(
         'min-h-[calc(100%+2rem)] -top-4 -left-4 w-[calc(100%+2rem)] -z-1 absolute',
         'bg-white shadow-sm',
-        'rounded-md'
+        'rounded-md',
       )}
     >
       {items.length > 0 && <LazyItems setFocus={setFocus} items={items} />}

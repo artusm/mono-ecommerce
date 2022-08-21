@@ -1,3 +1,5 @@
+import React from 'react';
+
 import clsx from 'clsx';
 
 export const Spinner: React.FC = () => (
@@ -6,7 +8,7 @@ export const Spinner: React.FC = () => (
     className={clsx(
       'h-full w-full inline',
       'fill-black text-transparent',
-      'animate-spin'
+      'animate-spin',
     )}
     viewBox="0 0 100 101"
     fill="none"

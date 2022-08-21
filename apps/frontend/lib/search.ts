@@ -1,5 +1,7 @@
-import type { ProductSearchQueryVariables } from '@ecommerce/shared/graphql/types';
 import { ParsedUrlQuery } from 'querystring';
+
+import type { ProductSearchQueryVariables } from '@ecommerce/shared/graphql/types';
+
 import { PRICE_FILTER, SORT_FILTER } from './constants';
 
 type SafeQuery = Map<string, string | string[]>;
@@ -54,7 +56,7 @@ const searchFilterHandler: Record<
 };
 
 export function searchGraphqlFilters(
-  safeQuery: SafeQuery
+  safeQuery: SafeQuery,
 ): ProductSearchQueryVariables {
   const filter: Record<string, unknown> = {};
 

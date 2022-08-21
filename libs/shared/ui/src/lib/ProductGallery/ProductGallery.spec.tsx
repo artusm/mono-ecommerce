@@ -1,16 +1,16 @@
-import { render, RenderResult, screen } from '@testing-library/react';
-import { create } from 'react-test-renderer';
 import '@testing-library/jest-dom';
+import { RenderResult, render, screen } from '@testing-library/react';
+import { create } from 'react-test-renderer';
 
-import { ProductGallery } from './ProductGallery';
 import { PRODUCT_GALLERY_DEFAULT_PROPS } from '../../props/constants';
+import { ProductGallery } from './ProductGallery';
 
 describe('ProductGallery', () => {
   let renderResult: RenderResult;
 
   beforeEach(() => {
     renderResult = render(
-      <ProductGallery {...PRODUCT_GALLERY_DEFAULT_PROPS} />
+      <ProductGallery {...PRODUCT_GALLERY_DEFAULT_PROPS} />,
     );
   });
 
@@ -18,7 +18,7 @@ describe('ProductGallery', () => {
     const { baseElement } = renderResult;
 
     const tree = create(
-      <ProductGallery {...PRODUCT_GALLERY_DEFAULT_PROPS} />
+      <ProductGallery {...PRODUCT_GALLERY_DEFAULT_PROPS} />,
     ).toJSON();
     expect(tree).toMatchSnapshot();
 

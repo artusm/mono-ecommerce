@@ -1,5 +1,5 @@
+import { ApolloClient, HttpLink, InMemoryCache } from '@apollo/client';
 import fetch from 'isomorphic-unfetch';
-import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';
 
 const createHttpLink = (headers) => {
   const httpLink = new HttpLink({

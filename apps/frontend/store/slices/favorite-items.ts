@@ -1,4 +1,4 @@
-import { createSlice, createSelector, PayloadAction } from '@reduxjs/toolkit';
+import { PayloadAction, createSelector, createSlice } from '@reduxjs/toolkit';
 
 export interface FavoriteItemsState {
   slugs: string[];
@@ -14,7 +14,7 @@ export const favoriteItemsSlice = createSlice({
   reducers: {
     toggleFavorite: (
       state: FavoriteItemsState,
-      action: PayloadAction<string>
+      action: PayloadAction<string>,
     ) => {
       const index = state.slugs.indexOf(action.payload);
 
@@ -33,12 +33,12 @@ export const isFavoriteSelector = createSelector(
     (state: FavoriteItemsState) => state.slugs,
     (_, slug: string): string => slug,
   ],
-  (slugs, slug) => slugs.includes(slug)
+  (slugs, slug) => slugs.includes(slug),
 );
 
 export const getFavoriteItemsQuantity = createSelector(
   (state: FavoriteItemsState) => state.slugs,
-  (slugs) => slugs.length
+  (slugs) => slugs.length,
 );
 
 export const { toggleFavorite } = favoriteItemsSlice.actions;

@@ -1,6 +1,9 @@
+import React from 'react';
+
 import clsx from 'clsx';
-import type { Item, ItemMap } from '../select';
+
 import { Icon } from '@ecommerce/shared/ui/Icon';
+import type { Item, ItemMap } from '@ecommerce/shared/ui/Select';
 
 interface Props {
   selected: Item | ItemMap | null;
@@ -25,7 +28,7 @@ export const Button: React.FC<Props> = (props) => {
         'sm:(px-6)',
         (selected instanceof Map ? selected.size > 0 : selected !== null)
           ? 'border-black'
-          : 'border-transparent'
+          : 'border-transparent',
       )}
       type="button"
       onClick={handleClick}
@@ -35,7 +38,7 @@ export const Button: React.FC<Props> = (props) => {
         className={clsx(
           'h-4.5 w-4.5 relative',
           'transition-transform transform-gpu',
-          open && 'rotate-180'
+          open && 'rotate-180',
         )}
         aria-hidden="true"
       >

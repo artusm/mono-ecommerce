@@ -1,5 +1,8 @@
+import React from 'react';
+
 import clsx from 'clsx';
-import type { Item, ItemMap } from '../select';
+
+import type { Item, ItemMap } from '@ecommerce/shared/ui/Select';
 
 export interface Props {
   selected: Item | ItemMap | null;
@@ -17,7 +20,7 @@ export const Dropdown: React.FC<Props> = (props) => {
         'absolute top-13 p-4 z-20 w-max',
         'flex flex-col',
         'bg-white border rounded-md',
-        alignClasses || 'left-0'
+        alignClasses || 'left-0',
       )}
     >
       {items.map((item) => (
@@ -28,7 +31,7 @@ export const Dropdown: React.FC<Props> = (props) => {
           <label
             className={clsx(
               'flex gap-8 justify-between items-center',
-              'cursor-pointer select-none'
+              'cursor-pointer select-none',
             )}
           >
             {item.label}

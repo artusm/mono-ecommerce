@@ -1,4 +1,7 @@
+import React from 'react';
+
 import clsx from 'clsx';
+
 import { Button } from '@ecommerce/shared/ui/button';
 import { Icon } from '@ecommerce/shared/ui/icon';
 
@@ -28,7 +31,7 @@ export const Checkout: React.FC<Props> = (props) => {
           className={clsx(
             'h-full',
             'flex items-center justify-center',
-            'font-bold text-lg select-none'
+            'font-bold text-lg select-none',
           )}
         >
           Checkout

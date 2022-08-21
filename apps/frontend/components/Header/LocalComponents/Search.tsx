@@ -1,8 +1,10 @@
-import debounce from 'lodash.debounce';
 import React, { useEffect, useRef, useState } from 'react';
+
+import debounce from 'lodash.debounce';
 import { useRouter } from 'next/router';
+
 import { useSearchbarSearchLazyQuery } from '@ecommerce/shared/graphql/types';
-import { Searchbar } from '@ecommerce/shared/ui/searchbar';
+import { Searchbar } from '@ecommerce/shared/ui/Searchbar';
 
 export const NavSearch: React.FC = () => {
   const router = useRouter();

@@ -1,8 +1,11 @@
-import { ProductCartQuery } from '@ecommerce/shared/graphql/types';
-import { createItemHref } from '@ecommerce/shared/utils/url';
-import { formatPrice } from '@ecommerce/shared/utils/format-price';
+import React, { useMemo } from 'react';
+
 import clsx from 'clsx';
-import { useMemo } from 'react';
+
+import { ProductCartQuery } from '@ecommerce/shared/graphql/types';
+import { formatPrice } from '@ecommerce/shared/utils/format-price';
+import { createItemHref } from '@ecommerce/shared/utils/url';
+
 import { AmountControl } from './LocalComponents/AmountControl';
 import { BaseControl } from './LocalComponents/BaseControl';
 import { CoverImage } from './LocalComponents/CoverImage';
@@ -42,7 +45,7 @@ export const CartItem: React.FC<CartItemProps> = (props) => {
         <div
           className={clsx(
             'w-full',
-            'flex flex-wrap items-center justify-between gap-x-1'
+            'flex flex-wrap items-center justify-between gap-x-1',
           )}
         >
           <Name name={name} href={href} />
@@ -54,7 +57,7 @@ export const CartItem: React.FC<CartItemProps> = (props) => {
             'mt-auto',
             'flex gap-8 items-center flex-wrap',
             'md:(gap-4)',
-            'lg:(gap-8)'
+            'lg:(gap-8)',
           )}
         >
           <AmountControl

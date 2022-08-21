@@ -10,7 +10,7 @@ export default ({ env }) => ({
         '..',
         '..',
         '..',
-        env('DATABASE_FILENAME', '.tmp/data.db')
+        env('DATABASE_FILENAME', '.tmp/data.db'),
       ),
     },
     useNullAsDefault: true,

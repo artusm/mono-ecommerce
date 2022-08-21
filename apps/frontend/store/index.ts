@@ -1,28 +1,28 @@
 import {
-  configureStore,
-  ThunkAction,
   Action,
+  ThunkAction,
   combineReducers,
+  configureStore,
 } from '@reduxjs/toolkit';
-import { createWrapper } from 'next-redux-wrapper';
 
+import { createWrapper } from 'next-redux-wrapper';
 import {
-  persistStore,
-  persistReducer,
   FLUSH,
-  REHYDRATE,
   PAUSE,
   PERSIST,
   PURGE,
   REGISTER,
+  REHYDRATE,
+  persistReducer,
+  persistStore,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
+import CardItemsReducer, { cardItemsSlice } from './slices/cart-items';
+import CardUIReducer, { cardUISlice } from './slices/cart-ui';
 import FavoriteItemsReducer, {
   favoriteItemsSlice,
 } from './slices/favorite-items';
-import CardItemsReducer, { cardItemsSlice } from './slices/cart-items';
-import CardUIReducer, { cardUISlice } from './slices/cart-ui';
 
 const reducers = combineReducers({
   [favoriteItemsSlice.name]: FavoriteItemsReducer,
@@ -41,7 +41,7 @@ const makeStore = () => {
               storage,
               blacklist: [],
             },
-            reducers
+            reducers,
           ),
     middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware({

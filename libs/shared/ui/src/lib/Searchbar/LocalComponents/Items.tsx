@@ -1,6 +1,9 @@
+import React from 'react';
+
 import clsx from 'clsx';
+
+import type { Items as TItems } from '@ecommerce/shared/ui/Searchbar';
 import { SearchbarItem } from '@ecommerce/shared/ui/SearchbarItem';
-import type { Items as TItems } from '../searchbar';
 
 export interface Props {
   items: TItems;
@@ -21,7 +24,7 @@ export const Items: React.FC<Props> = (props) => {
                 item={item.attributes}
                 handleClick={() => setFocus(false)}
               />
-            )
+            ),
         )}
       </ul>
     </div>

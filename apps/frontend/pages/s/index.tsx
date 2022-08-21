@@ -1,15 +1,18 @@
-import { GlobalSeo } from '@/types/GlobalSeo';
+import React, { useMemo } from 'react';
+
+import { useRouter } from 'next/router';
+
 import {
   useCategoriesSearchQuery,
   useProductSearchQuery,
 } from '@ecommerce/shared/graphql/types';
+
 import { Layout } from '@/components/Layout';
-import React, { useMemo } from 'react';
+import { withApollo } from '@/hocs/with-apollo';
+import { withGlobalSeo } from '@/hocs/with-global-seo';
 import { searchGraphqlFilters, searchSafeQuery } from '@/lib/search';
 import { Search } from '@/scenes/Search';
-import { withGlobalSeo } from '@/hocs/with-global-seo';
-import { withApollo } from '@/hocs/with-apollo';
-import { useRouter } from 'next/router';
+import { GlobalSeo } from '@/types/GlobalSeo';
 
 interface Props {
   globalSeo: GlobalSeo;

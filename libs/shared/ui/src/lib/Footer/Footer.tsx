@@ -1,3 +1,5 @@
+import React from 'react';
+
 import clsx from 'clsx';
 
 export const Footer: React.FC = () => {
@@ -6,7 +8,7 @@ export const Footer: React.FC = () => {
       <div
         className={clsx(
           'mx-auto max-w-screen-xl py-8 px-4',
-          'flex gap-8 items-center justify-between'
+          'flex gap-8 items-center justify-between',
         )}
       >
         <ul className={clsx('flex gap-4', 'text-xs not-italic', 'opacity-65')}>

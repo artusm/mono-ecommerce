@@ -1,6 +1,7 @@
+import React, { useMemo } from 'react';
+
 import clsx from 'clsx';
 import Link from 'next/link';
-import { useMemo } from 'react';
 
 type ConditionalProps =
   | {
@@ -56,7 +57,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
             'active:scale-92',
 
             disabled && 'opacity-50 pointer-events-none',
-            classes
+            classes,
           )
         : clsx(
             'inline-block',
@@ -82,9 +83,9 @@ export const Button: React.FC<ButtonProps> = (props) => {
               'hover:(bg-gray-100 border-black) active:(bg-gray-300) border border-gray-300',
 
             disabled && 'opacity-50 pointer-events-none',
-            classes
+            classes,
           ),
-    [type, size, round, classes, disabled, basic]
+    [type, size, round, classes, disabled, basic],
   );
 
   if (tag === 'a') {

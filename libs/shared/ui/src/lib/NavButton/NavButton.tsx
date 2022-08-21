@@ -1,6 +1,7 @@
-import { ReactNode, useMemo } from 'react';
-import { Button } from '../button';
-import { Icon, ICONS } from '../icon';
+import React, { ReactNode, useMemo } from 'react';
+
+import { Button } from '@ecommerce/shared/ui/Button';
+import { ICONS, Icon } from '@ecommerce/shared/ui/Icon';
 
 type TypeProp<T extends keyof typeof ICONS> = keyof Pick<typeof ICONS, T>;
 

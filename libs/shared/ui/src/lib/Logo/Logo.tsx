@@ -1,6 +1,9 @@
-import Link from 'next/link';
-import { useIsomorphicLayoutEffect } from '@ecommerce/shared/utils/hooks/useIsomorphicLayoutEffect';
+import React from 'react';
+
 import clsx from 'clsx';
+import Link from 'next/link';
+
+import { useIsomorphicLayoutEffect } from '@ecommerce/shared/utils/hooks/useIsomorphicLayoutEffect';
 
 /* eslint-disable-next-line */
 export interface LogoProps {}
@@ -21,7 +24,7 @@ export const Logo: React.FC<LogoProps> = () => {
             'flex',
             'font-bold text-2xl leading-4 uppercase',
             'pointer-events-none select-none',
-            'animate-jello'
+            'animate-jello',
           )}
           aria-hidden="true"
           data-testid="first-word"
@@ -41,7 +44,7 @@ export const Logo: React.FC<LogoProps> = () => {
             'flex',
             'font-bold text-2xl uppercase',
             'pointer-events-none select-none',
-            'animate-jello'
+            'animate-jello',
           )}
           aria-hidden="true"
           data-testid="second-word"

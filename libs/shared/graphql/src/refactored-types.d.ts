@@ -1,7 +1,7 @@
 import type {
-  UploadFileEntityResponse,
-  Product as PreProduct,
   Category as PreCategory,
+  Product as PreProduct,
+  UploadFileEntityResponse,
 } from './types';
 
 type StrapiImage = UploadFileEntityResponse;

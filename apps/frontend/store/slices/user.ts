@@ -1,4 +1,4 @@
-import { createSlice, createSelector } from '@reduxjs/toolkit';
+import { createSelector, createSlice } from '@reduxjs/toolkit';
 
 export interface CurrentUserState {
   user: any;
@@ -23,7 +23,7 @@ export const currentUserSlice = createSlice({
 
 export const isCurrentUserExist = createSelector(
   (state: CurrentUserState) => state.user,
-  (currentUser) => !!currentUser
+  (currentUser) => !!currentUser,
 );
 
 export const favoriteItemsActions = currentUserSlice.actions;

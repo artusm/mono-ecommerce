@@ -1,5 +1,8 @@
+import React from 'react';
+
 import clsx from 'clsx';
-import { Button } from '@ecommerce/shared/ui/button';
+
+import { Button } from '@ecommerce/shared/ui/Button';
 import { Icon } from '@ecommerce/shared/ui/Icon';
 
 interface Props {

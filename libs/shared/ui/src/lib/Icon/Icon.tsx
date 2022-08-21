@@ -1,7 +1,9 @@
-import FeatherIcon from 'feather-icons-react';
+import React, { SVGAttributes } from 'react';
+
 import clsx from 'clsx';
+import FeatherIcon from 'feather-icons-react';
+
 import { Spinner } from './LocalComponents/Spinner';
-import { SVGAttributes } from 'react';
 
 export interface IconProps extends SVGAttributes<SVGElement> {
   icon?: keyof typeof ICONS;
@@ -40,7 +42,7 @@ export const Icon: React.FC<IconProps> = (props: IconProps) => {
         size === 'base' && 'h-5 w-5',
         size === 'lg' && 'h-8 w-8',
 
-        classes
+        classes,
       )}
       aria-hidden="true"
     >

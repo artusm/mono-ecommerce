@@ -1,5 +1,8 @@
+import React from 'react';
+
 import clsx from 'clsx';
-import { Icon } from '@ecommerce/shared/ui/icon';
+
+import { Icon } from '@ecommerce/shared/ui/Icon';
 
 interface Props {
   input: string;
@@ -16,7 +19,7 @@ export const Control: React.FC<Props> = (props) => {
         'right-4 absolute h-full',
         'flex items-center gap-2',
         'transition-opacity',
-        input ? 'opacity-100' : 'opacity-0 pointer-events-none invisible'
+        input ? 'opacity-100' : 'opacity-0 pointer-events-none invisible',
       )}
       data-testid="search-controls"
     >
@@ -25,7 +28,7 @@ export const Control: React.FC<Props> = (props) => {
         className={clsx(
           'h-4 w-4 relative',
           'flex items-center',
-          loading && 'hidden'
+          loading && 'hidden',
         )}
         type="button"
         title="clear input"
@@ -38,7 +41,7 @@ export const Control: React.FC<Props> = (props) => {
         className={clsx(
           'h-4 w-4 relative',
           'flex items-center',
-          'transition-colors'
+          'transition-colors',
         )}
         type="submit"
         title="submit search"

@@ -1,8 +1,10 @@
+import React from 'react';
+
 import NextHead from 'next/head';
+
+import type { SimplifiedImage } from '@ecommerce/shared/graphql/refactored-types';
 import { GlobalSeo } from '@ecommerce/shared/graphql/types';
 import { getImageURL } from '@ecommerce/shared/utils/url';
-import type { SimplifiedImage } from '@ecommerce/shared/graphql/refactored-types';
-import React from "react";
 
 interface Props {
   defaultSeo: Omit<GlobalSeo, 'metaImage'> & { metaImage: SimplifiedImage };
@@ -33,7 +35,7 @@ export const Head: React.FC<Props> = ({ defaultSeo, seo }) => {
       <meta name="twitter:card" content="summary_large_image" />
       {meta &&
         meta.map(
-          (m) => m && <meta key={m.id} name={m.name} content={m.content} />
+          (m) => m && <meta key={m.id} name={m.name} content={m.content} />,
         )}
     </NextHead>
   );

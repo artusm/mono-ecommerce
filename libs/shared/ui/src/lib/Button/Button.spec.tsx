@@ -1,8 +1,8 @@
-import { BUTTON_DEFAULT_PROPS } from '../../props/constants';
-import { render, RenderResult, screen } from '@testing-library/react';
-import { create } from 'react-test-renderer';
 import '@testing-library/jest-dom';
+import { RenderResult, render, screen } from '@testing-library/react';
+import { create } from 'react-test-renderer';
 
+import { BUTTON_DEFAULT_PROPS } from '../../props/constants';
 import { Button } from './index';
 
 describe('Button', () => {

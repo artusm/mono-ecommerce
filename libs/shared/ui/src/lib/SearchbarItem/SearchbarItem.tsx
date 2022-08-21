@@ -1,8 +1,11 @@
-import Image from 'next/image';
-import { createItemHref, getImageURL } from '@ecommerce/shared/utils/url';
-import { SearchbarSearchQuery } from '@ecommerce/shared/graphql/types';
-import Link from 'next/link';
+import React from 'react';
+
 import clsx from 'clsx';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import { SearchbarSearchQuery } from '@ecommerce/shared/graphql/types';
+import { createItemHref, getImageURL } from '@ecommerce/shared/utils/url';
 
 export interface SearchbarItemProps {
   item: NonNullable<

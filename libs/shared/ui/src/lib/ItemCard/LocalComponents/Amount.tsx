@@ -1,5 +1,8 @@
+import React from 'react';
+
 import clsx from 'clsx';
-import { Button } from '@ecommerce/shared/ui/button';
+
+import { Button } from '@ecommerce/shared/ui/Button';
 
 interface Props {
   handleClick: () => void;
@@ -18,7 +21,7 @@ export const Amount: React.FC<Props> = (props) => {
         'select-none text-white text-xs',
         'active:(bg-red-500)',
         'focus:(bg-red-500)',
-        'hover:(bg-red-500)'
+        'hover:(bg-red-500)',
       )}
       basic
       tag="button"

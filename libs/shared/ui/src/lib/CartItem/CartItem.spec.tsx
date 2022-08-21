@@ -1,10 +1,11 @@
-import { render, RenderResult, screen } from '@testing-library/react';
-import { create } from 'react-test-renderer';
 import '@testing-library/jest-dom';
+import { RenderResult, render, screen } from '@testing-library/react';
+import { create } from 'react-test-renderer';
 
-import { CartItem } from './CartItem';
-import { CART_ITEM_DEFAULT_PROPS } from '../../props/constants';
 import { formatPrice } from '@ecommerce/shared/utils/format-price';
+
+import { CART_ITEM_DEFAULT_PROPS } from '../../props/constants';
+import { CartItem } from './CartItem';
 
 describe('CartItem', () => {
   let renderResult: RenderResult;

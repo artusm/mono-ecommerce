@@ -1,9 +1,11 @@
+import React from 'react';
+
 import { ProductCartQuery } from '@ecommerce/shared/graphql/types';
 import { CartItem } from '@ecommerce/shared/ui/CartItem';
-import { useFavorite } from '@/hooks/useFavorite';
+
 import { useCartItem } from '@/hooks/useCartItem';
+import { useFavorite } from '@/hooks/useFavorite';
 import { MAXIMUM_IN_CART } from '@/lib/constants';
-import React from "react";
 
 interface Props {
   item: NonNullable<

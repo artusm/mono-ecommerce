@@ -1,5 +1,7 @@
+import React, { useMemo } from 'react';
+
 import clsx from 'clsx';
-import { useMemo } from 'react';
+
 import { Product } from '@ecommerce/shared/graphql/refactored-types';
 import { formatPrice } from '@ecommerce/shared/utils/format-price';
 
@@ -20,7 +22,7 @@ export const Information: React.FC<Props> = (props) => {
         className={clsx(
           'text-sm font-semibold uppercase',
           'sm:(text-base)',
-          hovered && 'underline'
+          hovered && 'underline',
         )}
       >
         {name}

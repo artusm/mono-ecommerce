@@ -1,7 +1,10 @@
-import { ProductSlugQuery } from '@ecommerce/shared/graphql/types';
-import { getImageURL } from '@ecommerce/shared/utils/url';
+import React from 'react';
+
 import clsx from 'clsx';
 import Image from 'next/image';
+
+import { ProductSlugQuery } from '@ecommerce/shared/graphql/types';
+import { getImageURL } from '@ecommerce/shared/utils/url';
 
 export interface ProductGalleryProps {
   images: NonNullable<
@@ -24,7 +27,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = (props) => {
                 'w-full aspect-square relative',
                 'bg-gray-100',
                 'pointer-events-none select-none',
-                'sm:(w-[calc(50%-0.5rem)])'
+                'sm:(w-[calc(50%-0.5rem)])',
               )}
               key={image.attributes.url}
             >
@@ -35,7 +38,7 @@ export const ProductGallery: React.FC<ProductGalleryProps> = (props) => {
                 alt="/"
               />
             </li>
-          )
+          ),
       )}
     </ul>
   );

@@ -1,5 +1,9 @@
+import React from 'react';
+
 import clsx from 'clsx';
+
 import { formatPrice } from '@ecommerce/shared/utils/format-price';
+
 import { Checkout } from './LocalComponents/Checkout';
 
 export interface CartSidebarProps {
@@ -17,13 +21,13 @@ export const CartSidebar: React.FC<CartSidebarProps> = (props) => {
       className={clsx(
         'w-full',
         'flex flex-col',
-        'md:(w-1/3 top-12 sticky h-full)'
+        'md:(w-1/3 top-12 sticky h-full)',
       )}
     >
       <h2
         className={clsx(
           'mb-2',
-          'flex justify-between items-center flex-wrap gap-1'
+          'flex justify-between items-center flex-wrap gap-1',
         )}
       >
         <span className="font-semibold text-base">Total</span>
