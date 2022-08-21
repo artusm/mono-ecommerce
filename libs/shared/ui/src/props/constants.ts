@@ -5,11 +5,13 @@ import {CartSidebarProps} from "@ecommerce/shared/ui/CartSidebar";
 import {CategoryCardProps} from "@ecommerce/shared/ui/CategoryCard";
 import {IconProps} from "@ecommerce/shared/ui/Icon";
 import {ItemCardProps} from "@ecommerce/shared/ui/ItemCard";
-
 import {NavButtonProps} from "@ecommerce/shared/ui/NavButton";
+import {ProductGalleryProps} from "@ecommerce/shared/ui/ProductGallery";
 
 import cat from './cat.jpg';
 import cat2 from './cat2.jpeg';
+
+console.log(cat2)
 
 export const PRODUCT: ProductSidebarProps['product'] = {
   slug: 'some-name',
@@ -122,4 +124,18 @@ export const ITEM_CARD_DEFAULT_PROPS: ItemCardProps = {
 };
 export const NAV_BUTTON_DEFAULT_PROPS: NavButtonProps = {
   type: 'heart',
+};
+export const PRODUCT_GALLERY_DEFAULT_PROPS: ProductGalleryProps = {
+  images: [
+    {
+      attributes: {
+        url: cat,
+      },
+    },
+    {
+      attributes: {
+        url: cat2,
+      },
+    },
+  ],
 };

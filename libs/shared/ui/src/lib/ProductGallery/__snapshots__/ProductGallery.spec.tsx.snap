@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductGallery should render successfully 1`] = `
+<ul
+  className="w-full flex flex-wrap gap-4"
+>
+  <li
+    className="w-full aspect-square relative bg-gray-100 pointer-events-none select-none sm:(w-[calc(50%-0.5rem)])"
+  >
+    Next image stub
+  </li>
+  <li
+    className="w-full aspect-square relative bg-gray-100 pointer-events-none select-none sm:(w-[calc(50%-0.5rem)])"
+  >
+    Next image stub
+  </li>
+</ul>
+`;
