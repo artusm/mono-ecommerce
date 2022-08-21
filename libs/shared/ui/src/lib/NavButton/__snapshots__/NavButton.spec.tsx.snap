@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavButton should render successfully 1`] = `
+<a
+  className="inline-block cursor-pointer transform-gpu transition-all active:scale-92 rounded-full p-3 hover:(bg-gray-100) active:(bg-gray-300)"
+  href="/favorite"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  title="favorite page"
+>
+  <div
+    aria-hidden="true"
+    className="relative flex items-center select-none pointer-events-none h-5 w-5"
+  >
+    <svg
+      className="feather feather-heart "
+      fill="none"
+      height={24}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      width={24}
+    >
+      <g
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\\"></path>",
+          }
+        }
+      />
+    </svg>
+  </div>
+</a>
+`;

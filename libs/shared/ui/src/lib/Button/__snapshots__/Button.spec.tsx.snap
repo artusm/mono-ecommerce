@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render successfully 1`] = `
+<button
+  className="inline-block cursor-pointer transform-gpu transition-all active:scale-92 rounded-full p-3 text-white bg-sky-600 hover:(bg-sky-700) active:(bg-sky-800)"
+>
+  hello
+</button>
+`;
