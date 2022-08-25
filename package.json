@@ -16,7 +16,7 @@
     "@apollo/client": "^3.6.9",
     "@apollo/react-hooks": "^4.0.0",
     "@apollo/react-ssr": "^4.0.0",
-    "@nrwl/next": "14.5.8",
+    "@nrwl/next": "14.5.10",
     "@reduxjs/toolkit": "^1.8.5",
     "clsx": "^1.2.1",
     "core-js": "^3.25.0",
